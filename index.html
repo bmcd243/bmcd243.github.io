@@ -74,6 +74,32 @@ home_active: true
         </div>
     </section>
 
+    <section id="blog" class="blog">
+        <div class="container">
+            <h2>Latest Blog Posts</h2>
+            
+            <div class="blog-list">
+                <div class="blog-post">
+                    <div class="blog-post-content">
+                        <h3><a href="{{ site.baseurl }}/blog-post.html?post=broken-windows">Don't Break Your Windows</a></h3>
+                        <div class="blog-post-date">February 10, 2025</div>
+                    </div>
+                </div>
+                
+                <div class="blog-post">
+                    <div class="blog-post-content">
+                        <h3><a href="{{ site.baseurl }}/blog-post.html?post=cambridge">My First Term at the University of Cambridge</a></h3>
+                        <div class="blog-post-date">February 3, 2025</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="margin-top: var(--space-8);">
+                <a href="{{ site.baseurl }}/blog/" style="font-weight: 500;">View all posts →</a>
+            </div>
+        </div>
+    </section>
+
 </main>
 
 <script>
@@ -89,5 +115,29 @@ home_active: true
             });
         }
     });
-</script> 
-</script> 
+</script>
+
+<style>
+    /* Blog section styles */
+    .blog-post-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        flex-wrap: wrap;
+        gap: var(--space-4);
+        margin-bottom: var(--space-2);
+    }
+    
+    .blog-post-content h3 {
+        font-size: 1.4rem;
+        margin-bottom: 0;
+        margin-right: var(--space-4);
+    }
+    
+    .blog-post-date {
+        font-family: var(--font-mono);
+        font-size: 0.9rem;
+        color: var(--text-secondary);
+        white-space: nowrap;
+    }
+</style> 

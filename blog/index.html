@@ -30,18 +30,25 @@ blog_active: true
     }
     
     .blog-post-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        flex-wrap: wrap;
+        gap: var(--space-4);
         margin-bottom: var(--space-2);
     }
     
     .blog-post-content h3 {
         font-size: 1.4rem;
-        margin-bottom: var(--space-2);
+        margin-bottom: 0;
+        margin-right: var(--space-4);
     }
     
     .blog-post-date {
         font-family: var(--font-mono);
         font-size: 0.9rem;
         color: var(--text-secondary);
+        white-space: nowrap;
     }
     
     .loading-indicator {
@@ -73,10 +80,9 @@ blog_active: true
     const blogPosts = [
         {
             id: 'broken-windows',
-            title: 'don\'t break your windows',
-            date: 'February 10, 2025',
-            summary: 'Applying the broken windows theory to personal discipline and habits. How small actions create momentum and help maintain a state of excellence in all areas of life.'
-        },
+            title: 'Don\'t Break Your Windows',
+            date: 'February 10, 2025'
+        }
     ];
 
     // Function to render blog posts
