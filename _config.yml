@@ -1,8 +1,11 @@
 # Site settings
-title: Antonio Franca
-description: Personal academic website for Antonio Franca, PhD student at the University of Cambridge
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+title: Antonio Franca | ML Researcher
+email: your-email@example.com
+description: >-
+  Personal website of Antonio Franca, Machine Learning researcher 
+  focusing on computational neuroscience and AI.
+baseurl: "" # For user or organization sites, leave this empty
+url: "https://antoniofranca.github.io" # Replace with your GitHub Pages URL
 author: Antonio Franca
 
 # Build settings
@@ -25,13 +28,17 @@ exclude:
   - templates/
   - config.json
   - .gitignore
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .git
 
 # Social links
 social:
   twitter: https://twitter.com/antoniofranca
   github: https://github.com/antoniofranca
   google_scholar: https://scholar.google.com/citations?user=antonio-franca
-  email: antonio.franca@example.com
 
 # Navigation
 navigation:
