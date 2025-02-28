@@ -1,20 +1,18 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-# Jekyll version
-gem "jekyll", "~> 4.2.0"
+gem 'jekyll', '~> 4.3'
+gem 'webrick', '~> 1.8'  # Required for Ruby 3.0+
 
 # Jekyll plugins
-group :jekyll_plugins do
-  gem "jekyll-feed", "~> 0.12"
-  gem "jekyll-seo-tag", "~> 2.7"
-end
+gem 'jekyll-feed'
+gem 'jekyll-seo-tag'
 
-# Windows and JRuby dependencies
+# Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
+# and associated library.
 platforms :mingw, :x64_mingw, :mswin, :jruby do
-  gem "tzinfo", "~> 1.2"
-  gem "tzinfo-data"
+  gem 'tzinfo', '~> 1.2'
+  gem 'tzinfo-data'
 end
 
-# Performance-related gems
-gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
-gem "webrick", "~> 1.7" 
+# Performance-booster for watching directories on Windows
+gem 'wdm', '~> 0.1.1', :platforms => [:mingw, :x64_mingw, :mswin] 

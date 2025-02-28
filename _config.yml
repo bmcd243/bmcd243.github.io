@@ -8,6 +8,22 @@ baseurl: "" # For user or organization sites, leave this empty
 url: "https://antoniofranca.github.io" # Replace with your GitHub Pages URL
 author: Antonio Franca
 
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /blog/:title/
+
+# Defaults for various content
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      blog_active: true
+
 # Build settings
 permalink: pretty
 markdown: kramdown

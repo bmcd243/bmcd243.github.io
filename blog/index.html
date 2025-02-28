@@ -51,7 +51,7 @@ blog_active: true
         white-space: nowrap;
     }
     
-    .loading-indicator {
+    .no-posts {
         text-align: center;
         padding: var(--space-8);
         color: var(--text-secondary);
@@ -66,48 +66,20 @@ blog_active: true
                 <p>Thoughts and reflections on my research, academic experiences, and insights from my work in computational neuroscience and artificial intelligence.</p>
             </div>
             
-            <div class="blog-list" id="blog-posts-container">
-                <!-- Blog posts will be loaded here -->
-                <div class="loading-indicator">Loading blog posts...</div>
+            <div class="blog-list">
+                {% if site.posts.size > 0 %}
+                    {% for post in site.posts %}
+                    <div class="blog-post">
+                        <div class="blog-post-content">
+                            <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+                            <div class="blog-post-date">{{ post.date | date: "%B %-d, %Y" }}</div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                {% else %}
+                    <div class="no-posts">No blog posts found.</div>
+                {% endif %}
             </div>
         </div>
     </section>
-</main>
-
-<script>
-    // Blog posts metadata - in a real implementation, this might be loaded from a JSON file
-    // or a backend API
-    const blogPosts = [
-        {
-            id: 'broken-windows',
-            title: 'Don\'t Break Your Windows',
-            date: 'February 10, 2025'
-        }
-    ];
-
-    // Function to render blog posts
-    function renderBlogPosts() {
-        const container = document.getElementById('blog-posts-container');
-        
-        if (blogPosts.length === 0) {
-            container.innerHTML = '<div class="no-posts">No blog posts found.</div>';
-            return;
-        }
-        
-        container.innerHTML = blogPosts.map(post => {
-            return `
-            <div class="blog-post">
-                <div class="blog-post-content">
-                    <h3><a href="{{ site.baseurl }}/blog-post.html?post=${post.id}">${post.title}</a></h3>
-                    <div class="blog-post-date">${post.date}</div>
-                </div>
-            </div>
-            `;
-        }).join('');
-    }
-
-    // Initialize the page
-    document.addEventListener('DOMContentLoaded', () => {
-        renderBlogPosts();
-    });
-</script> 
+</main> 

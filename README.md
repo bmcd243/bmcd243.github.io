@@ -1,6 +1,84 @@
-# Antonio Franca Personal Website
+# Antonio Franca's Personal Website
 
-This is the personal academic website for Antonio Franca, PhD student in Computer Science.
+This is the repository for my personal website, built with Jekyll and hosted on GitHub Pages.
+
+## Adding New Blog Posts
+
+To add a new blog post:
+
+1. Create a new Markdown file in the `_posts` directory with the filename format: `YYYY-MM-DD-title-with-hyphens.md`
+2. Add the front matter at the top of the file:
+
+```markdown
+---
+layout: post
+title: "Your Blog Post Title"
+date: YYYY-MM-DD
+---
+
+Your content goes here in Markdown format.
+```
+
+3. Write your blog post content using Markdown syntax
+4. Save the file and commit it to your repository
+
+## Running the Site Locally
+
+### First-time setup:
+
+1. Install a Ruby version manager (recommended to avoid permission issues):
+
+```bash
+# Install Homebrew if you don't have it
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+# Install rbenv
+brew install rbenv
+
+# Set up rbenv
+echo 'eval "$(rbenv init -)"' >> ~/.zshrc
+source ~/.zshrc
+
+# Install Ruby
+rbenv install 3.2.2
+rbenv global 3.2.2
+```
+
+2. Install Jekyll and Bundler:
+
+```bash
+gem install jekyll bundler
+```
+
+3. Install dependencies:
+
+```bash
+bundle install
+```
+
+### Running the development server:
+
+```bash
+bundle exec jekyll serve
+```
+
+Then visit http://localhost:4000 in your browser.
+
+To automatically reload when files change:
+
+```bash
+bundle exec jekyll serve --livereload
+```
+
+## File Structure
+
+- `_posts/`: Contains all the blog post Markdown files
+- `_layouts/`: Contains layout templates
+- `_includes/`: Contains reusable components
+- `assets/`: Contains static files like images, CSS, etc.
+- `_config.yml`: Site configuration
+- `index.html`: Homepage
+- Other directories are for specific sections of the site (research, cv, blog)
 
 ## Project Structure
 
