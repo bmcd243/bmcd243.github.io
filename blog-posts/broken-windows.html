@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Blog Post | Antonio Franca
+title: Don't Break Your Windows | Antonio Franca
 blog_active: true
 ---
 
@@ -55,75 +55,17 @@ blog_active: true
         display: flex;
         justify-content: space-between;
     }
-    
-    .loading-indicator {
-        text-align: center;
-        padding: var(--space-8);
-        color: var(--text-secondary);
-    }
-    
-    .post-not-found {
-        text-align: center;
-        padding: var(--space-12);
-    }
 </style>
 
 <main>
     <article class="blog-post-page">
         <div class="container">
-            <div id="blog-post-container">
-                <div class="loading-indicator">Loading blog post...</div>
+            <div class="blog-post-header">
+                <h1 class="blog-post-title">Don't Break Your Windows</h1>
+                <div class="blog-post-date">February 10, 2025</div>
             </div>
             
-            <div class="blog-post-footer">
-                <div class="blog-nav">
-                    <a href="{{ site.baseurl }}/blog/" class="back-link">← All Posts</a>
-                </div>
-            </div>
-        </div>
-    </article>
-</main>
-
-<script>
-    // Blog posts data - in a real implementation, this might be loaded from JSON files or a backend API
-    const blogPosts = {
-        'cambridge': {
-            title: 'My First Term at Cambridge',
-            date: 'February 3, 2025',
-            content: `
-                <p>This term at Cambridge has been an incredible journey filled with research collaborations, teaching experiences, and the unique academic environment that makes this university so special.</p>
-                
-                <p>In this post, I'll share some insights about my academic transition, the research I've been involved with, and how my perspective on machine learning has evolved since arriving here.</p>
-                
-                <h2>Academic Environment</h2>
-                
-                <p>The collegiate system at Cambridge creates a uniquely collaborative environment. I've found myself discussing research ideas with scholars from diverse fields - from computational neuroscientists to philosophers of mind - which has broadened my perspectives on artificial intelligence research.</p>
-                
-                <p>The supervision system, where we meet in small groups with faculty members, has been particularly valuable. These in-depth discussions have pushed me to refine my thinking and articulate my ideas more precisely.</p>
-                
-                <h2>Research Focus</h2>
-                
-                <p>I've been focusing on computational models of memory formation, extending my previous work on hippocampal memory systems. Working with the Computational and Biological Learning Lab has exposed me to cutting-edge approaches in neural network interpretability.</p>
-                
-                <p>A particularly exciting development has been applying some of the theoretical frameworks I've been developing to real neuroimaging data, bridging the gap between computational theory and experimental neuroscience.</p>
-                
-                <h2>Teaching Experiences</h2>
-                
-                <p>I've had the opportunity to serve as a teaching assistant for an undergraduate machine learning course. Explaining complex concepts to students has been rewarding and has deepened my own understanding of the fundamentals.</p>
-                
-                <p>The questions students ask often highlight aspects of machine learning that I've taken for granted, forcing me to reconsider basic assumptions and strengthen my conceptual foundation.</p>
-                
-                <h2>Looking Forward</h2>
-                
-                <p>As I look ahead to the rest of the academic year, I'm excited to delve deeper into my research and establish more collaborations across departments. Cambridge's rich intellectual environment continues to inspire and challenge me in ways I hadn't anticipated.</p>
-                
-                <p>I'll be sharing more specific research updates in future posts, including some preliminary results from our work on memory consolidation mechanisms in recurrent neural networks.</p>
-            `
-        },
-        'broken-windows': {
-            title: 'Don\'t Break Your Windows',
-            date: 'February 10, 2025',
-            content: `
+            <div class="blog-post-content">
                 <p>
                     The <a href="https://en.wikipedia.org/wiki/Broken_windows_theory" target="_blank">broken windows theory</a> suggests that small signs of deterioration, like a broken window in an abandoned building, can lead to more chaos and disorder if not repaired promptly. In sociology, a compelling example could be the hypothesis that the accumulation of trash on the streets of Barcelona might have contributed to an increase in crime (<a href="https://ddd.uab.cat/pub/artpub/2023/287681/intjougeo_a2023_v12n449.pdf" target="_blank">article</a>).
                 </p>
@@ -171,48 +113,13 @@ blog_active: true
                 <p>
                     So, prepare in advance so that when you face moments of weakness, you'll remember: don't break your windows (nor let others break them).
                 </p>
-            `
-        }
-    };
-
-    // Function to get query parameter
-    function getQueryParam(param) {
-        const urlParams = new URLSearchParams(window.location.search);
-        return urlParams.get(param);
-    }
-
-    // Function to render blog post
-    function renderBlogPost() {
-        const container = document.getElementById('blog-post-container');
-        const postId = getQueryParam('post');
-        
-        if (!postId || !blogPosts[postId]) {
-            container.innerHTML = `
-                <div class="post-not-found">
-                    <h2>Blog Post Not Found</h2>
-                    <p>Sorry, the requested blog post could not be found.</p>
-                </div>
-            `;
-            return;
-        }
-        
-        const post = blogPosts[postId];
-        document.title = `${post.title} | Antonio Franca`;
-        
-        container.innerHTML = `
-            <div class="blog-post-header">
-                <h1 class="blog-post-title">${post.title}</h1>
-                <div class="blog-post-date">${post.date}</div>
             </div>
             
-            <div class="blog-post-content">
-                ${post.content}
+            <div class="blog-post-footer">
+                <div class="blog-nav">
+                    <a href="{{ site.baseurl }}/blog/" class="back-link">← All Posts</a>
+                </div>
             </div>
-        `;
-    }
-
-    // Initialize the page
-    document.addEventListener('DOMContentLoaded', () => {
-        renderBlogPost();
-    });
-</script> 
+        </div>
+    </article>
+</main> 

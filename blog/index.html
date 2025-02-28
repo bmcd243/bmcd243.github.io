@@ -19,6 +19,36 @@ blog_active: true
         display: grid;
         gap: var(--space-8);
     }
+    
+    .blog-post {
+        padding-bottom: var(--space-6);
+        border-bottom: 1px solid var(--border-color);
+    }
+    
+    .blog-post:last-child {
+        border-bottom: none;
+    }
+    
+    .blog-post-content {
+        margin-bottom: var(--space-2);
+    }
+    
+    .blog-post-content h3 {
+        font-size: 1.4rem;
+        margin-bottom: var(--space-2);
+    }
+    
+    .blog-post-date {
+        font-family: var(--font-mono);
+        font-size: 0.9rem;
+        color: var(--text-secondary);
+    }
+    
+    .loading-indicator {
+        text-align: center;
+        padding: var(--space-8);
+        color: var(--text-secondary);
+    }
 </style>
 
 <main>
@@ -26,7 +56,7 @@ blog_active: true
         <div class="container">
             <div class="blog-header">
                 <h1>Latest Blog Posts</h1>
-                <p>Thoughts and reflections on my research, academic experiences, and insights from my work in computational neuroscience and artificial intelligence. These posts document my journey, significant findings, and observations on the evolving field of machine learning.</p>
+                <p>Thoughts and reflections on my research, academic experiences, and insights from my work in computational neuroscience and artificial intelligence.</p>
             </div>
             
             <div class="blog-list" id="blog-posts-container">
@@ -42,11 +72,11 @@ blog_active: true
     // or a backend API
     const blogPosts = [
         {
-            id: 'cambridge',
-            title: 'My First Term at Cambridge',
-            date: 'February 3, 2025',
-            summary: 'Reflections on research collaborations, teaching experiences, and the unique academic environment at Cambridge University.'
-        }
+            id: 'broken-windows',
+            title: 'don\'t break your windows',
+            date: 'February 10, 2025',
+            summary: 'Applying the broken windows theory to personal discipline and habits. How small actions create momentum and help maintain a state of excellence in all areas of life.'
+        },
     ];
 
     // Function to render blog posts
@@ -62,10 +92,9 @@ blog_active: true
             return `
             <div class="blog-post">
                 <div class="blog-post-content">
-                    <h3><a href="../blog-post.html?post=cambridge">${post.title}</a></h3>
+                    <h3><a href="{{ site.baseurl }}/blog-post.html?post=${post.id}">${post.title}</a></h3>
                     <div class="blog-post-date">${post.date}</div>
                 </div>
-                <p>${post.summary}</p>
             </div>
             `;
         }).join('');
