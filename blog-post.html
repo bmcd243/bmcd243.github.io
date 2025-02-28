@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post | Antonio Franca</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Include the Marked.js library for Markdown parsing -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body class="light-mode">
+    <div class="cursor-dot"></div>
+    
+    <header>
+        <div class="container">
+            <a href="/" class="logo">AF</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="blog.html" class="active">blog</a></li>
+                    <li><a href="cv.html">cv</a></li>
+                    <li><a href="research.html">research</a></li>
+                </ul>
+                <button id="theme-toggle" aria-label="Toggle dark/light mode">
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <article class="blog-post-page">
+            <div class="container">
+                <div class="blog-post-header">
+                    <a href="blog.html" class="back-link">← All posts</a>
+                    <h1 id="post-title">Loading...</h1>
+                    <div class="blog-post-meta" id="post-date">Loading...</div>
+                </div>
+                
+                <div class="blog-post-content" id="post-content">
+                    Loading content...
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Antonio Franca</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Set up Marked.js renderer
+        const renderer = new marked.Renderer();
+        
+        // Configure Marked options for clean Obsidian-like rendering
+        marked.setOptions({
+            renderer: renderer,
+            gfm: true,
+            breaks: true,
+            sanitize: false,
+            smartLists: true,
+            smartypants: true,
+            xhtml: true
+        });
+        
+        // Cambridge blog post content
+        const cambridgeContent = `# My First Term at the University of Cambridge
+
+Date: February 3, 2025
+
+As I reflect on my first term as a visiting professor at the University of Cambridge, I'm struck by the rich intellectual environment and the collaborative spirit that permeates this historic institution. The ancient buildings and winding streets of Cambridge provide the perfect backdrop for deep intellectual exploration.
+
+Upon arrival, I was immediately drawn into a whirlwind of activity. The Department of Computer Science and Technology (formerly known as the Computer Laboratory) welcomed me warmly, and I found myself engaged in stimulating discussions with colleagues whose research interests complemented and challenged my own.
+
+## Research Collaborations
+
+One of the most rewarding aspects of this term has been the opportunity to collaborate with Professor Sarah Thompson's group on bridging symbolic reasoning with neural networks. Our weekly seminars have become a melting pot of ideas, where we explore the intersection of traditional AI approaches with modern deep learning techniques.
+
+This collaboration has already yielded promising results. We've developed a hybrid architecture that incorporates explicit symbolic reasoning within a neural framework, allowing for both the flexibility of neural networks and the interpretability of symbolic systems. We're currently preparing a paper on our findings for submission to the upcoming ICLR conference.
+
+### Key Innovations
+
+- **Neuro-symbolic Integration**: Combining neural networks with symbolic reasoning for enhanced interpretability
+- **Hybrid Attention Mechanisms**: Novel attention structures that can focus on both symbolic rules and learned patterns
+- **Explainable Inferences**: Methods to trace decision paths through the hybrid architecture
+
+## Teaching and Mentorship
+
+Teaching at Cambridge has been an equally enriching experience. I've had the privilege of lecturing on "Advanced Topics in Machine Learning" to a group of exceptionally bright students. Their insightful questions and innovative approaches to problem-solving have often led to new perspectives on my own research.
+
+I've also been mentoring three PhD students, each pursuing fascinating research directions:
+
+1. Emma is working on improving adversarial robustness in vision transformers
+2. James is developing new techniques for few-shot learning in natural language processing
+3. Li is exploring causal inference in reinforcement learning
+
+### Course Structure
+
+| Week | Topic | Reading |
+|------|-------|---------|
+| 1 | Introduction to Advanced ML | LeCun et al. (2015) |
+| 2 | Deep Learning Fundamentals | Goodfellow et al. (2016) |
+| 3 | Attention Mechanisms | Vaswani et al. (2017) |
+| 4 | Graph Neural Networks | Kipf & Welling (2017) |
+| 5 | Reinforcement Learning | Sutton & Barto (2018) |
+
+## The Cambridge Experience
+
+Beyond the academic environment, Cambridge itself has been a delight to explore. The college system creates a unique social and intellectual ecosystem, with each college having its own distinct character and traditions. I've enjoyed punting on the River Cam, attending formal dinners at various colleges, and exploring the numerous museums and libraries that house centuries of knowledge.
+
+The famous Cambridge pubs have also provided a relaxed setting for continuing discussions after seminars and lectures. Some of our most creative ideas have emerged over a pint at The Eagle or The Panton Arms.
+
+\`\`\`python
+# A simple code snippet from one of our projects
+class NeuroSymbolicModule(nn.Module):
+    def __init__(self, input_dim, symbolic_rules):
+        super().__init__()
+        self.neural_net = NeuralProcessor(input_dim)
+        self.symbolic_engine = SymbolicReasoner(symbolic_rules)
+        self.integration_layer = IntegrationMechanism()
+        
+    def forward(self, x):
+        neural_output = self.neural_net(x)
+        symbolic_output = self.symbolic_engine(x)
+        return self.integration_layer(neural_output, symbolic_output)
+\`\`\`
+
+## Looking Forward
+
+As the term comes to a close, I'm already looking forward to the next. We have plans to expand our collaboration to include researchers from the Engineering Department, focusing on applications of our hybrid AI systems to complex engineering problems.
+
+This first term has reinforced my belief in the importance of academic exchange and cross-disciplinary collaboration. The traditions of Cambridge, combined with its forward-looking research environment, create the perfect conditions for innovation in artificial intelligence and machine learning.
+
+> "The greatest value of having a place like Cambridge is that you can ride your bicycle to meet people who change how you think about everything." - Anonymous Cambridge professor
+
+I'm grateful for this opportunity and excited to see what the next term brings. If you're in Cambridge and working in related areas, do reach out—I'm always keen to expand our collaborative network.`;
+        
+        // Function to render the post content
+        function renderPost(markdown) {
+            // Extract title and date from markdown
+            const lines = markdown.split('\n');
+            const titleMatch = lines[0].match(/^#\s+(.+)$/);
+            const title = titleMatch ? titleMatch[1] : 'Untitled Post';
+            
+            // Find date line
+            let date = 'No date';
+            for (let i = 1; i < 5 && i < lines.length; i++) {
+                const dateMatch = lines[i].match(/Date:\s*(.+)$/i);
+                if (dateMatch) {
+                    date = dateMatch[1].trim();
+                    break;
+                }
+            }
+            
+            // Set title and date
+            document.getElementById('post-title').textContent = title;
+            document.getElementById('post-date').textContent = date;
+            document.title = `${title} | Antonio Franca`;
+            
+            // Render the markdown content
+            document.getElementById('post-content').innerHTML = marked.parse(markdown);
+        }
+        
+        // Load the post when the page is ready
+        document.addEventListener('DOMContentLoaded', () => {
+            renderPost(cambridgeContent);
+        });
+    </script>
+</body>
+</html> 

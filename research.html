@@ -1,0 +1,361 @@
+---
+layout: default
+title: Research | Antonio Franca
+research_active: true
+---
+
+<style>
+    /* Research page specific styles */
+    .research-page {
+        padding-top: var(--space-8);
+        margin-bottom: var(--space-24);
+    }
+    
+    .research-header {
+        margin-bottom: var(--space-12);
+    }
+    
+    .research-category {
+        margin-bottom: var(--space-16);
+    }
+    
+    .research-category h2 {
+        font-size: 1.4rem;
+        font-weight: 600;
+        border-bottom: 1px solid var(--border-color);
+        padding-bottom: var(--space-2);
+        margin-bottom: var(--space-6);
+    }
+    
+    .featured-projects {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: var(--space-8);
+        margin-bottom: var(--space-16);
+    }
+    
+    .featured-project {
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        overflow: hidden;
+        transition: transform var(--transition), box-shadow var(--transition);
+    }
+    
+    .featured-project:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+    }
+    
+    .featured-project-image {
+        width: 100%;
+        height: 160px;
+        background-color: var(--background-secondary);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+    
+    .featured-project-image svg {
+        width: 64px;
+        height: 64px;
+        color: var(--text-secondary);
+        opacity: 0.6;
+    }
+    
+    .featured-project-content {
+        padding: var(--space-4) var(--space-6);
+    }
+    
+    .featured-project h3 {
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin-bottom: var(--space-2);
+    }
+    
+    .featured-project p {
+        color: var(--text-secondary);
+        margin-bottom: var(--space-4);
+        font-size: 0.95rem;
+    }
+    
+    .featured-project-links {
+        display: flex;
+        gap: var(--space-4);
+    }
+    
+    .featured-project-links a {
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+    
+    /* Other projects section */
+    .other-projects-list {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-6);
+    }
+    
+    .other-project {
+        display: flex;
+        gap: var(--space-4);
+        align-items: flex-start;
+    }
+    
+    .other-project-icon {
+        width: 40px;
+        height: 40px;
+        min-width: 40px;
+        background-color: var(--background-secondary);
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .other-project-icon svg {
+        width: 20px;
+        height: 20px;
+        color: var(--text-secondary);
+    }
+    
+    .other-project-content h3 {
+        font-size: 1.1rem;
+        font-weight: 500;
+        margin-bottom: var(--space-2);
+    }
+    
+    .other-project-content p {
+        color: var(--text-secondary);
+        margin-bottom: var(--space-2);
+        font-size: 0.95rem;
+    }
+    
+    .other-project-links {
+        display: flex;
+        gap: var(--space-4);
+    }
+    
+    .other-project-links a {
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+    
+    @media (max-width: 768px) {
+        .featured-projects {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+
+<main>
+    <section class="research-page">
+        <div class="container">
+            <div class="research-header">
+                <h1>Research</h1>
+                <p>My research focuses on the intersection of computational neuroscience and deep learning, developing algorithms that learn like the human brain. I'm particularly interested in neural network interpretability, bio-inspired learning mechanisms, and bridging symbolic reasoning with neural computation.</p>
+            </div>
+            
+            <div class="research-category">
+                <h2>Featured Projects</h2>
+                
+                <div class="featured-projects">
+                    <div class="featured-project">
+                        <div class="featured-project-image">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                            </svg>
+                        </div>
+                        <div class="featured-project-content">
+                            <h3>Neural Computation Framework</h3>
+                            <p>A lightweight framework for building and training bio-inspired neural networks with enhanced interpretability. Implements novel gradient-based learning algorithms inspired by neuroplasticity mechanisms observed in the brain.</p>
+                            <div class="featured-project-links">
+                                <a href="#">Project Page →</a>
+                                <a href="#">GitHub →</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="featured-project">
+                        <div class="featured-project-image">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h10a2 2 0 012 2v10a2 2 0 01-2 2z"></path>
+                            </svg>
+                        </div>
+                        <div class="featured-project-content">
+                            <h3>Self-Supervised Learning Benchmarks</h3>
+                            <p>A collection of benchmarks for evaluating the performance of self-supervised representation learning algorithms. Features standardized evaluation protocols and visualization tools to compare different approaches.</p>
+                            <div class="featured-project-links">
+                                <a href="#">Project Page →</a>
+                                <a href="#">GitHub →</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="featured-project">
+                        <div class="featured-project-image">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.9 19.1C1 15.2 1 8.8 4.9 4.9M19.1 4.9C23 8.8 23 15.2 19.1 19.1M16.5 7.5C18.5 9.5 18.5 12.7 16.5 14.7M7.5 14.7C5.5 12.7 5.5 9.5 7.5 7.5M12 12L12 12"></path>
+                            </svg>
+                        </div>
+                        <div class="featured-project-content">
+                            <h3>Hippocampal Memory Models</h3>
+                            <p>Computational models exploring how variability in synaptic connectivity enhances the memory storage capabilities of recurrent neural networks, inspired by the CA3 region of the hippocampus.</p>
+                            <div class="featured-project-links">
+                                <a href="#">Project Page →</a>
+                                <a href="#">GitHub →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="research-category">
+                <h2>Other Research Projects</h2>
+                
+                <div class="other-projects-list">
+                    <div class="other-project">
+                        <div class="other-project-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                        <div class="other-project-content">
+                            <h3>Neuro-Symbolic Integration Framework</h3>
+                            <p>A hybrid architecture that incorporates explicit symbolic reasoning within a neural framework, allowing for both the flexibility of neural networks and the interpretability of symbolic systems.</p>
+                            <div class="other-project-links">
+                                <a href="#">Details →</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="other-project">
+                        <div class="other-project-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                            </svg>
+                        </div>
+                        <div class="other-project-content">
+                            <h3>Amari's Neural Field Simulations</h3>
+                            <p>Research on Amari's equations to simulate spatial firing patterns across neural fields, exploring their stability and dynamics in depicting cortical activity.</p>
+                            <div class="other-project-links">
+                                <a href="#">Details →</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="other-project">
+                        <div class="other-project-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"></path>
+                            </svg>
+                        </div>
+                        <div class="other-project-content">
+                            <h3>Glomeruli Tissue Unit Segmentation</h3>
+                            <p>A U-Net-based segmentation process for precise identification and analysis of Glomeruli Functional Tissue Units in kidney tissues using advanced computer vision techniques.</p>
+                            <div class="other-project-links">
+                                <a href="#">Details →</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="other-project">
+                        <div class="other-project-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                            </svg>
+                        </div>
+                        <div class="other-project-content">
+                            <h3>Cross-Domain Sentiment Classification</h3>
+                            <p>An Adversarial Domain Adaptation (ADA) approach for Cross-Domain Sentiment Classification (CDSC) that enhances model robustness across diverse domains.</p>
+                            <div class="other-project-links">
+                                <a href="#">Details →</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="other-project">
+                        <div class="other-project-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"></path>
+                            </svg>
+                        </div>
+                        <div class="other-project-content">
+                            <h3>Power-Seeking AI Analysis</h3>
+                            <p>Research on the emergence of power-seeking behavior in advanced AI systems and its implications for AI safety and alignment. Includes formal models and theoretical frameworks.</p>
+                            <div class="other-project-links">
+                                <a href="#">Details →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="research-category">
+                <h2>Publications</h2>
+                
+                <div class="publication-list">
+                    <div class="publication">
+                        <div class="publication-year">2023</div>
+                        <div class="publication-details">
+                            <h3>Bridging Biological and Artificial Neural Networks</h3>
+                            <p>Nature Machine Intelligence</p>
+                            <div class="publication-links">
+                                <a href="#">Paper</a>
+                                <a href="#">Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="publication">
+                        <div class="publication-year">2022</div>
+                        <div class="publication-details">
+                            <h3>Self-Supervised Visual Representation Learning</h3>
+                            <p>ICML 2022</p>
+                            <div class="publication-links">
+                                <a href="#">Paper</a>
+                                <a href="#">Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="publication">
+                        <div class="publication-year">2021</div>
+                        <div class="publication-details">
+                            <h3>Interpretable Neural Networks: Uncovering the Black Box</h3>
+                            <p>NeurIPS 2021</p>
+                            <div class="publication-links">
+                                <a href="#">Paper</a>
+                                <a href="#">Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="publication">
+                        <div class="publication-year">2020</div>
+                        <div class="publication-details">
+                            <h3>Neuroplasticity-Inspired Training Algorithms for Artificial Neural Networks</h3>
+                            <p>ICLR 2020</p>
+                            <div class="publication-links">
+                                <a href="#">Paper</a>
+                                <a href="#">Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="publication">
+                        <div class="publication-year">2019</div>
+                        <div class="publication-details">
+                            <h3>Memory Storage Capacity in Recurrent Neural Networks</h3>
+                            <p>ICML 2019</p>
+                            <div class="publication-links">
+                                <a href="#">Paper</a>
+                                <a href="#">Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main> 

@@ -1,0 +1,45 @@
+# Site settings
+title: Antonio Franca
+description: Personal academic website for Antonio Franca, PhD student at the University of Cambridge
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+author: Antonio Franca
+
+# Build settings
+permalink: pretty
+markdown: kramdown
+sass:
+  style: compressed
+
+# Jekyll 3 settings
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Jekyll 4 settings
+include:
+  - _pages
+
+exclude:
+  - README.md
+  - templates/
+  - config.json
+  - .gitignore
+
+# Social links
+social:
+  twitter: https://twitter.com/antoniofranca
+  github: https://github.com/antoniofranca
+  google_scholar: https://scholar.google.com/citations?user=antonio-franca
+  email: antonio.franca@example.com
+
+# Navigation
+navigation:
+  - name: home
+    url: /
+  - name: blog
+    url: /blog/
+  - name: cv
+    url: /cv/
+  - name: research
+    url: /research/ 
