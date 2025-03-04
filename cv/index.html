@@ -13,11 +13,13 @@ cv_active: true
     
     .cv-header {
         margin-bottom: var(--space-12);
+    }
+
+    .cv-title-row {
         display: flex;
         justify-content: space-between;
-        align-items: flex-start;
-        flex-wrap: wrap;
-        gap: var(--space-4);
+        align-items: center;
+        margin-bottom: var(--space-4);
     }
     
     .cv-download-btn {
@@ -122,24 +124,18 @@ cv_active: true
     <section class="cv-page">
         <div class="container">
             <div class="cv-header">
-                <div>
+                <div class="cv-title-row">
                     <h1>Curriculum Vitae</h1>
-                    <p>My academic and professional journey in computational neuroscience and artificial intelligence research.</p>
-                    <div class="contact-info">
-                        <p>Antonio Franca Ibañez</p>
-                        <p>Email: antoniofrancaib@gmail.com</p>
-                        <p>Website: <a href="https://antoniofrancaib.github.io/">https://antoniofrancaib.github.io/</a></p>
-                        <p>Mobile: +34 671-449-737</p>
-                    </div>
+                    <a href="{{ site.baseurl }}/assets/cv.pdf" class="cv-download-btn" download>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        Download CV
+                    </a>
                 </div>
-                <a href="{{ site.baseurl }}/cv.pdf" class="cv-download-btn" download>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                        <polyline points="7 10 12 15 17 10"></polyline>
-                        <line x1="12" y1="15" x2="12" y2="3"></line>
-                    </svg>
-                    Download CV
-                </a>
+                <p>My academic and professional journey in computational neuroscience and artificial intelligence research.</p>
             </div>
             
             <!-- Education Section -->
