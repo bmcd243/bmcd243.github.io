@@ -29,8 +29,8 @@ cv_active: true
         padding: var(--space-2) var(--space-4);
         border-radius: 4px;
         font-weight: 500;
-        transition: background-color var(--transition);
         text-decoration: none;
+        transition: background-color var(--transition);
     }
     
     .cv-download-btn:hover {
@@ -38,8 +38,8 @@ cv_active: true
     }
     
     .cv-download-btn svg {
-        width: 16px;
-        height: 16px;
+        width: 20px;
+        height: 20px;
     }
     
     .cv-section {
@@ -124,6 +124,7 @@ cv_active: true
             <div class="cv-header">
                 <div>
                     <h1>Curriculum Vitae</h1>
+                    <p>My academic and professional journey in computational neuroscience and artificial intelligence research.</p>
                     <div class="contact-info">
                         <p>Antonio Franca Ibañez</p>
                         <p>Email: antoniofrancaib@gmail.com</p>
@@ -131,9 +132,11 @@ cv_active: true
                         <p>Mobile: +34 671-449-737</p>
                     </div>
                 </div>
-                <a href="{{ site.baseurl }}/assets/cv.pdf" class="cv-download-btn" download>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                <a href="{{ site.baseurl }}/cv.pdf" class="cv-download-btn" download>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
                     </svg>
                     Download CV
                 </a>

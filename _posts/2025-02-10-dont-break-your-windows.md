@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Don't Break Your Windows"
+title: "don't break your windows"
 date: 2025-02-10
 ---
 
