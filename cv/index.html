@@ -99,6 +99,16 @@ cv_active: true
         font-weight: 400;
         color: var(--text-secondary);
         margin-bottom: var(--space-2);
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: var(--space-2);
+    }
+    
+    .cv-entry-location {
+        font-family: var(--font-mono);
+        font-size: 0.9rem;
+        color: var(--text-secondary);
     }
     
     .cv-entry-description {
@@ -212,7 +222,10 @@ cv_active: true
                         <h3 class="cv-entry-title">University of Cambridge</h3>
                         <span class="cv-entry-date">Oct 2024 – Present</span>
                     </div>
-                    <div class="cv-entry-subtitle">MPhil in Machine Learning and Machine Intelligence, Cambridge, England</div>
+                    <div class="cv-entry-subtitle">
+                        <span>MPhil in Machine Learning and Machine Intelligence</span>
+                        <span class="cv-entry-location">Cambridge, England</span>
+                    </div>
                     <ul class="cv-entry-list">
                         <li>Member of the Department of Engineering, Queens' College.</li>
                         <li>Relevant courses @Cambridge: Reinforcement Learning and Decision Making, Deep learning & Structured Data, Probabilistic Machine Learning, Geometric Deep Learning, Computational Neuroscience</li>
@@ -224,7 +237,10 @@ cv_active: true
                         <h3 class="cv-entry-title">Vrije Universiteit Amsterdam, VU Amsterdam</h3>
                         <span class="cv-entry-date">Sept 2021 – June 2024</span>
                     </div>
-                    <div class="cv-entry-subtitle">BSc in Mathematics; Grade: Cum Laude (top <2%), Netherlands</div>
+                    <div class="cv-entry-subtitle">
+                        <span>BSc in Mathematics; Grade: Cum Laude (top <2%)</span>
+                        <span class="cv-entry-location">Amsterdam, Netherlands</span>
+                    </div>
                     <ul class="cv-entry-list">
                         <li>Pursued the Honors Program with an additional 30 ECTS in advanced Computer Science courses.</li>
                         <li>Relevant courses @VU: Bayesian Statistics, Dynamical Systems, Topology, Complex Analysis, Fourier Analysis, Multivariable Calculus, Group Theory.</li>
@@ -236,7 +252,10 @@ cv_active: true
                         <h3 class="cv-entry-title">Nanyang Technological University, NTU Singapore</h3>
                         <span class="cv-entry-date">Aug 2023 – Dec 2023</span>
                     </div>
-                    <div class="cv-entry-subtitle">Exchange Semester in Artificial Intelligence, Singapore</div>
+                    <div class="cv-entry-subtitle">
+                        <span>Exchange Semester in Artificial Intelligence</span>
+                        <span class="cv-entry-location">Singapore</span>
+                    </div>
                     <ul class="cv-entry-list">
                         <li>GLOBE scholar - Merit-based scholarship.</li>
                         <li>Coursework @NTU: Algorithm Design & Analysis, Machine Learning, Neural Network & Deep Learning, Natural Language Processing, Modelling & Control.</li>
@@ -253,7 +272,10 @@ cv_active: true
                         <h3 class="cv-entry-title">Centre de Recerca Matemàtica, CRM Barcelona</h3>
                         <span class="cv-entry-date">Feb 2024 – Aug 2024</span>
                     </div>
-                    <div class="cv-entry-subtitle">Bachelor's Thesis research supervised by Dr. Alexander Roxin, Spain</div>
+                    <div class="cv-entry-subtitle">
+                        <span>Bachelor's Thesis research supervised by Dr. Alexander Roxin</span>
+                        <span class="cv-entry-location">Barcelona, Spain</span>
+                    </div>
                     <ul class="cv-entry-list">
                         <li>Researched how variability in synaptic connectivity can enhance the memory storage capabilities of recurrent neural networks (CA3 region of the hippocampus).</li>
                         <li>Code available at github.com/antoniofrancaib and project available <a href="#">here</a>.</li>
@@ -265,7 +287,10 @@ cv_active: true
                         <h3 class="cv-entry-title">Vrije Universiteit Amsterdam, VU Amsterdam</h3>
                         <span class="cv-entry-date">Feb 2023 - June 2023</span>
                     </div>
-                    <div class="cv-entry-subtitle">Independent Research project supervised by Prof. Daniele Avitabile, Netherlands</div>
+                    <div class="cv-entry-subtitle">
+                        <span>Independent Research project supervised by Prof. Daniele Avitabile</span>
+                        <span class="cv-entry-location">Amsterdam, Netherlands</span>
+                    </div>
                     <ul class="cv-entry-list">
                         <li>Researched Amari's equations to simulate spatial firing patterns across neural fields, exploring their stability and dynamics in depicting cortical activity.</li>
                         <li>Project report available <a href="#">here</a>.</li>
@@ -277,7 +302,10 @@ cv_active: true
                         <h3 class="cv-entry-title">Artificial Neural Computing, ANC Miami, FL</h3>
                         <span class="cv-entry-date">Jan 2022 – May 2022</span>
                     </div>
-                    <div class="cv-entry-subtitle">Research Intern supervised by Dr. Vitaly Vanchurin (remote)</div>
+                    <div class="cv-entry-subtitle">
+                        <span>Research Intern supervised by Dr. Vitaly Vanchurin</span>
+                        <span class="cv-entry-location">Remote</span>
+                    </div>
                     <ul class="cv-entry-list">
                         <li>Took classes on advanced ML topics, including statistical modeling, thermodynamics, non-equilibrium dynamics, and physics- and bio-inspired algorithms.</li>
                         <li>Attended the ANC Journal Club discussing analytical machine learning theory research papers.</li>
@@ -290,7 +318,10 @@ cv_active: true
                         <h3 class="cv-entry-title">Center for AI Safety, CAIS San Francisco, CA</h3>
                         <span class="cv-entry-date">Jun 2021 – Sept 2021</span>
                     </div>
-                    <div class="cv-entry-subtitle">Machine Learning Safety Scholar (remote)</div>
+                    <div class="cv-entry-subtitle">
+                        <span>Machine Learning Safety Scholar</span>
+                        <span class="cv-entry-location">Remote</span>
+                    </div>
                     <ul class="cv-entry-list">
                         <li>Completed online courses from MIT and the University of Michigan, along with a new course on Introduction to ML Safety.</li>
                         <li>Final project on the emergence of power-seeking AI and its potential existential threat, available <a href="#">here</a>.</li>
@@ -307,7 +338,10 @@ cv_active: true
                         <h3 class="cv-entry-title">Vrije Universiteit Amsterdam, VU Amsterdam</h3>
                         <span class="cv-entry-date">Feb 2023 – Jun 2023</span>
                     </div>
-                    <div class="cv-entry-subtitle">Teaching Assistant in Probability Theory, Netherlands</div>
+                    <div class="cv-entry-subtitle">
+                        <span>Teaching Assistant in Probability Theory</span>
+                        <span class="cv-entry-location">Amsterdam, Netherlands</span>
+                    </div>
                 </div>
                 
                 <div class="cv-entry">
@@ -315,7 +349,10 @@ cv_active: true
                         <h3 class="cv-entry-title">Vrije Universiteit Amsterdam, VU Amsterdam</h3>
                         <span class="cv-entry-date">Sept 2022 – Jan 2023</span>
                     </div>
-                    <div class="cv-entry-subtitle">Teaching Assistant in Single Variable Calculus and Linear Algebra, Netherlands</div>
+                    <div class="cv-entry-subtitle">
+                        <span>Teaching Assistant in Single Variable Calculus and Linear Algebra</span>
+                        <span class="cv-entry-location">Amsterdam, Netherlands</span>
+                    </div>
                     <ul class="cv-entry-list">
                         <li>Led weekly sessions for 20-40 students, reviewing lectures and assisting with problem sets.</li>
                     </ul>
@@ -331,7 +368,10 @@ cv_active: true
                         <h3 class="cv-entry-title">Altan.ai</h3>
                         <span class="cv-entry-date">Jan 2022 – January 2023</span>
                     </div>
-                    <div class="cv-entry-subtitle">Founding Engineer, Barcelona, Spain</div>
+                    <div class="cv-entry-subtitle">
+                        <span>Founding Engineer</span>
+                        <span class="cv-entry-location">Barcelona, Spain</span>
+                    </div>
                     <ul class="cv-entry-list">
                         <li>Developed a multi-armed bandit algorithm for budget optimization for a marketing agency client and built a platform for easy chatbot integration on websites.</li>
                     </ul>
@@ -347,7 +387,10 @@ cv_active: true
                         <h3 class="cv-entry-title">Segmenting Glomeruli Functional Tissue Units</h3>
                         <span class="cv-entry-date">Fall 2023</span>
                     </div>
-                    <div class="cv-entry-subtitle">Final project for the Machine Learning class (CZ4041) at NTU Singapore</div>
+                    <div class="cv-entry-subtitle">
+                        <span>Final project for the Machine Learning class (CZ4041) at NTU Singapore</span>
+                        <span class="cv-entry-location">Singapore</span>
+                    </div>
                     <ul class="cv-entry-list">
                         <li>Developed and optimized a U-Net-based segmentation process for precise identification and analysis of Glomeruli Functional Tissue Units in kidney tissues.</li>
                         <li>Code available at github.com/antoniofrancaib and project available <a href="#">here</a>.</li>
@@ -359,7 +402,10 @@ cv_active: true
                         <h3 class="cv-entry-title">Cross-Domain Sentiment Classification with Domain-Adaptive Neural Networks</h3>
                         <span class="cv-entry-date">Fall 2023</span>
                     </div>
-                    <div class="cv-entry-subtitle">Project for the Deep Learning & Neural Networks class (CZ4042) at NTU Singapore</div>
+                    <div class="cv-entry-subtitle">
+                        <span>Project for the Deep Learning & Neural Networks class (CZ4042) at NTU Singapore</span>
+                        <span class="cv-entry-location">Singapore</span>
+                    </div>
                     <ul class="cv-entry-list">
                         <li>Implemented a novel Adversarial Domain Adaptation (ADA) approach for Cross-Domain Sentiment Classification (CDSC) that enhances model robustness across diverse domains.</li>
                         <li>Project report available <a href="#">here</a>.</li>
@@ -376,7 +422,10 @@ cv_active: true
                         <h3 class="cv-entry-title">Menú Por El Planeta (non-profit)</h3>
                         <span class="cv-entry-date">Sept 2019 – Jun 2021</span>
                     </div>
-                    <div class="cv-entry-subtitle">Co-Founder, Barcelona, Spain</div>
+                    <div class="cv-entry-subtitle">
+                        <span>Co-Founder</span>
+                        <span class="cv-entry-location">Barcelona, Spain</span>
+                    </div>
                     <ul class="cv-entry-list">
                         <li>Non-profit organization that assists Spanish universities in transitioning to a more sustainable food offer.</li>
                         <li>Responsible for fund-raising, organisation, supervision of employees and strategic decisions.</li>
@@ -389,7 +438,10 @@ cv_active: true
                         <h3 class="cv-entry-title">Estudiante Por Los Animales</h3>
                         <span class="cv-entry-date">Jan 2019 – Jun 2020</span>
                     </div>
-                    <div class="cv-entry-subtitle">Co-Organizer, Barcelona, Spain</div>
+                    <div class="cv-entry-subtitle">
+                        <span>Co-Organizer</span>
+                        <span class="cv-entry-location">Barcelona, Spain</span>
+                    </div>
                     <ul class="cv-entry-list">
                         <li>Organized talks, conferences, and group readings to promote the moral consideration of non-human animals.</li>
                     </ul>
