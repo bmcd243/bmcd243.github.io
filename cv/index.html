@@ -173,6 +173,61 @@ cv_active: true
         width: 30%;
         color: var(--text-secondary);
     }
+    
+    /* Icon styles */
+    .section-icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: var(--space-3);
+        color: var(--primary);
+    }
+    
+    .entry-icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 36px;
+        height: 36px;
+        min-width: 36px;
+        margin-right: var(--space-4);
+        border-radius: 50%;
+        background-color: var(--background-secondary);
+        color: var(--primary);
+        transition: all 0.2s ease;
+    }
+    
+    .entry-icon svg {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .cv-entry:hover .entry-icon {
+        background-color: var(--primary);
+        color: white;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Dark theme adjustments */
+    [data-theme='dark'] .entry-icon {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    
+    [data-theme='dark'] .cv-entry:hover .entry-icon {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+    
+    /* Enhanced entry layout */
+    .cv-entry {
+        margin-bottom: var(--space-8);
+        display: flex;
+        transition: all 0.2s ease;
+    }
+    
+    .cv-entry-content {
+        flex: 1;
+    }
 </style>
 
 <main>
@@ -195,7 +250,15 @@ cv_active: true
             
             <!-- General Information Section -->
             <div class="cv-section general-info-section">
-                <h2 class="cv-section-title">GENERAL INFORMATION</h2>
+                <h2 class="cv-section-title">
+                    <span class="section-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="8" r="5"></circle>
+                            <path d="M20 21v-2a8 8 0 0 0-16 0v2"></path>
+                        </svg>
+                    </span>
+                    GENERAL INFORMATION
+                </h2>
                 
                 <table class="info-table">
                     <tr>
@@ -215,301 +278,546 @@ cv_active: true
             
             <!-- Education Section -->
             <div class="cv-section">
-                <h2 class="cv-section-title">EDUCATION</h2>
+                <h2 class="cv-section-title">
+                    <span class="section-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                            <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                        </svg>
+                    </span>
+                    EDUCATION
+                </h2>
                 
                 <div class="cv-entry">
-                    <div class="cv-entry-header">
-                        <h3 class="cv-entry-title">University of Cambridge</h3>
-                        <span class="cv-entry-date">Oct 2024 – Present</span>
+                    <div class="entry-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v1H6a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h4v1a5 5 0 0 0 5 5h3a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z"></path>
+                            <line x1="12" y1="11" x2="18" y2="11"></line>
+                        </svg>
                     </div>
-                    <div class="cv-entry-subtitle">
-                        <span>MPhil in Machine Learning and Machine Intelligence</span>
-                        <span class="cv-entry-location">Cambridge, England</span>
+                    <div class="cv-entry-content">
+                        <div class="cv-entry-header">
+                            <h3 class="cv-entry-title">University of Cambridge</h3>
+                            <span class="cv-entry-date">Oct 2024 – Present</span>
+                        </div>
+                        <div class="cv-entry-subtitle">
+                            <span>MPhil in Machine Learning and Machine Intelligence</span>
+                            <span class="cv-entry-location">Cambridge, England</span>
+                        </div>
+                        <ul class="cv-entry-list">
+                            <li>Member of the Department of Engineering, Queens' College.</li>
+                            <li>Relevant courses @Cambridge: Reinforcement Learning and Decision Making, Deep learning & Structured Data, Probabilistic Machine Learning, Geometric Deep Learning, Computational Neuroscience</li>
+                        </ul>
                     </div>
-                    <ul class="cv-entry-list">
-                        <li>Member of the Department of Engineering, Queens' College.</li>
-                        <li>Relevant courses @Cambridge: Reinforcement Learning and Decision Making, Deep learning & Structured Data, Probabilistic Machine Learning, Geometric Deep Learning, Computational Neuroscience</li>
-                    </ul>
                 </div>
                 
                 <div class="cv-entry">
-                    <div class="cv-entry-header">
-                        <h3 class="cv-entry-title">Vrije Universiteit Amsterdam, VU Amsterdam</h3>
-                        <span class="cv-entry-date">Sept 2021 – June 2024</span>
+                    <div class="entry-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                        </svg>
                     </div>
-                    <div class="cv-entry-subtitle">
-                        <span>BSc in Mathematics; Grade: Cum Laude (top <2%)</span>
-                        <span class="cv-entry-location">Amsterdam, Netherlands</span>
+                    <div class="cv-entry-content">
+                        <div class="cv-entry-header">
+                            <h3 class="cv-entry-title">Vrije Universiteit Amsterdam, VU Amsterdam</h3>
+                            <span class="cv-entry-date">Sept 2021 – June 2024</span>
+                        </div>
+                        <div class="cv-entry-subtitle">
+                            <span>BSc in Mathematics; Grade: Cum Laude (top <2%)</span>
+                            <span class="cv-entry-location">Amsterdam, Netherlands</span>
+                        </div>
+                        <ul class="cv-entry-list">
+                            <li>Pursued the Honors Program with an additional 30 ECTS in advanced Computer Science courses.</li>
+                            <li>Relevant courses @VU: Bayesian Statistics, Dynamical Systems, Topology, Complex Analysis, Fourier Analysis, Multivariable Calculus, Group Theory.</li>
+                        </ul>
                     </div>
-                    <ul class="cv-entry-list">
-                        <li>Pursued the Honors Program with an additional 30 ECTS in advanced Computer Science courses.</li>
-                        <li>Relevant courses @VU: Bayesian Statistics, Dynamical Systems, Topology, Complex Analysis, Fourier Analysis, Multivariable Calculus, Group Theory.</li>
-                    </ul>
                 </div>
                 
                 <div class="cv-entry">
-                    <div class="cv-entry-header">
-                        <h3 class="cv-entry-title">Nanyang Technological University, NTU Singapore</h3>
-                        <span class="cv-entry-date">Aug 2023 – Dec 2023</span>
+                    <div class="entry-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="3" y1="9" x2="21" y2="9"></line>
+                            <line x1="9" y1="21" x2="9" y2="9"></line>
+                        </svg>
                     </div>
-                    <div class="cv-entry-subtitle">
-                        <span>Exchange Semester in Artificial Intelligence</span>
-                        <span class="cv-entry-location">Singapore</span>
+                    <div class="cv-entry-content">
+                        <div class="cv-entry-header">
+                            <h3 class="cv-entry-title">Nanyang Technological University, NTU Singapore</h3>
+                            <span class="cv-entry-date">Aug 2023 – Dec 2023</span>
+                        </div>
+                        <div class="cv-entry-subtitle">
+                            <span>Exchange Semester in Artificial Intelligence</span>
+                            <span class="cv-entry-location">Singapore</span>
+                        </div>
+                        <ul class="cv-entry-list">
+                            <li>GLOBE scholar - Merit-based scholarship.</li>
+                            <li>Coursework @NTU: Algorithm Design & Analysis, Machine Learning, Neural Network & Deep Learning, Natural Language Processing, Modelling & Control.</li>
+                        </ul>
                     </div>
-                    <ul class="cv-entry-list">
-                        <li>GLOBE scholar - Merit-based scholarship.</li>
-                        <li>Coursework @NTU: Algorithm Design & Analysis, Machine Learning, Neural Network & Deep Learning, Natural Language Processing, Modelling & Control.</li>
-                    </ul>
                 </div>
             </div>
             
             <!-- Research Experience Section -->
             <div class="cv-section">
-                <h2 class="cv-section-title">RESEARCH EXPERIENCE</h2>
+                <h2 class="cv-section-title">
+                    <span class="section-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                        </svg>
+                    </span>
+                    RESEARCH EXPERIENCE
+                </h2>
                 
                 <div class="cv-entry">
-                    <div class="cv-entry-header">
-                        <h3 class="cv-entry-title">Centre de Recerca Matemàtica, CRM Barcelona</h3>
-                        <span class="cv-entry-date">Feb 2024 – Aug 2024</span>
+                    <div class="entry-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                        </svg>
                     </div>
-                    <div class="cv-entry-subtitle">
-                        <span>Bachelor's Thesis research supervised by Dr. Alexander Roxin</span>
-                        <span class="cv-entry-location">Barcelona, Spain</span>
+                    <div class="cv-entry-content">
+                        <div class="cv-entry-header">
+                            <h3 class="cv-entry-title">Centre de Recerca Matemàtica, CRM Barcelona</h3>
+                            <span class="cv-entry-date">Feb 2024 – Aug 2024</span>
+                        </div>
+                        <div class="cv-entry-subtitle">
+                            <span>Bachelor's Thesis research supervised by Dr. Alexander Roxin</span>
+                            <span class="cv-entry-location">Barcelona, Spain</span>
+                        </div>
+                        <ul class="cv-entry-list">
+                            <li>Researched how variability in synaptic connectivity can enhance the memory storage capabilities of recurrent neural networks (CA3 region of the hippocampus).</li>
+                            <li>Code available at github.com/antoniofrancaib and project available <a href="#">here</a>.</li>
+                        </ul>
                     </div>
-                    <ul class="cv-entry-list">
-                        <li>Researched how variability in synaptic connectivity can enhance the memory storage capabilities of recurrent neural networks (CA3 region of the hippocampus).</li>
-                        <li>Code available at github.com/antoniofrancaib and project available <a href="#">here</a>.</li>
-                    </ul>
                 </div>
                 
                 <div class="cv-entry">
-                    <div class="cv-entry-header">
-                        <h3 class="cv-entry-title">Vrije Universiteit Amsterdam, VU Amsterdam</h3>
-                        <span class="cv-entry-date">Feb 2023 - June 2023</span>
+                    <div class="entry-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                        </svg>
                     </div>
-                    <div class="cv-entry-subtitle">
-                        <span>Independent Research project supervised by Prof. Daniele Avitabile</span>
-                        <span class="cv-entry-location">Amsterdam, Netherlands</span>
+                    <div class="cv-entry-content">
+                        <div class="cv-entry-header">
+                            <h3 class="cv-entry-title">Vrije Universiteit Amsterdam, VU Amsterdam</h3>
+                            <span class="cv-entry-date">Feb 2023 - June 2023</span>
+                        </div>
+                        <div class="cv-entry-subtitle">
+                            <span>Independent Research project supervised by Prof. Daniele Avitabile</span>
+                            <span class="cv-entry-location">Amsterdam, Netherlands</span>
+                        </div>
+                        <ul class="cv-entry-list">
+                            <li>Researched Amari's equations to simulate spatial firing patterns across neural fields, exploring their stability and dynamics in depicting cortical activity.</li>
+                            <li>Project report available <a href="#">here</a>.</li>
+                        </ul>
                     </div>
-                    <ul class="cv-entry-list">
-                        <li>Researched Amari's equations to simulate spatial firing patterns across neural fields, exploring their stability and dynamics in depicting cortical activity.</li>
-                        <li>Project report available <a href="#">here</a>.</li>
-                    </ul>
                 </div>
                 
                 <div class="cv-entry">
-                    <div class="cv-entry-header">
-                        <h3 class="cv-entry-title">Artificial Neural Computing, ANC Miami, FL</h3>
-                        <span class="cv-entry-date">Jan 2022 – May 2022</span>
+                    <div class="entry-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"></path>
+                            <line x1="16" y1="8" x2="2" y2="22"></line>
+                            <line x1="17.5" y1="15" x2="9" y2="15"></line>
+                        </svg>
                     </div>
-                    <div class="cv-entry-subtitle">
-                        <span>Research Intern supervised by Dr. Vitaly Vanchurin</span>
-                        <span class="cv-entry-location">Remote</span>
+                    <div class="cv-entry-content">
+                        <div class="cv-entry-header">
+                            <h3 class="cv-entry-title">Artificial Neural Computing, ANC Miami, FL</h3>
+                            <span class="cv-entry-date">Jan 2022 – May 2022</span>
+                        </div>
+                        <div class="cv-entry-subtitle">
+                            <span>Research Intern supervised by Dr. Vitaly Vanchurin</span>
+                            <span class="cv-entry-location">Remote</span>
+                        </div>
+                        <ul class="cv-entry-list">
+                            <li>Took classes on advanced ML topics, including statistical modeling, thermodynamics, non-equilibrium dynamics, and physics- and bio-inspired algorithms.</li>
+                            <li>Attended the ANC Journal Club discussing analytical machine learning theory research papers.</li>
+                            <li>Experimental project on the boundary dynamics of neural networks.</li>
+                        </ul>
                     </div>
-                    <ul class="cv-entry-list">
-                        <li>Took classes on advanced ML topics, including statistical modeling, thermodynamics, non-equilibrium dynamics, and physics- and bio-inspired algorithms.</li>
-                        <li>Attended the ANC Journal Club discussing analytical machine learning theory research papers.</li>
-                        <li>Experimental project on the boundary dynamics of neural networks.</li>
-                    </ul>
                 </div>
                 
                 <div class="cv-entry">
-                    <div class="cv-entry-header">
-                        <h3 class="cv-entry-title">Center for AI Safety, CAIS San Francisco, CA</h3>
-                        <span class="cv-entry-date">Jun 2021 – Sept 2021</span>
+                    <div class="entry-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+                            <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+                            <line x1="6" y1="1" x2="6" y2="4"></line>
+                            <line x1="10" y1="1" x2="10" y2="4"></line>
+                            <line x1="14" y1="1" x2="14" y2="4"></line>
+                        </svg>
                     </div>
-                    <div class="cv-entry-subtitle">
-                        <span>Machine Learning Safety Scholar</span>
-                        <span class="cv-entry-location">Remote</span>
+                    <div class="cv-entry-content">
+                        <div class="cv-entry-header">
+                            <h3 class="cv-entry-title">Center for AI Safety, CAIS San Francisco, CA</h3>
+                            <span class="cv-entry-date">Jun 2021 – Sept 2021</span>
+                        </div>
+                        <div class="cv-entry-subtitle">
+                            <span>Machine Learning Safety Scholar</span>
+                            <span class="cv-entry-location">Remote</span>
+                        </div>
+                        <ul class="cv-entry-list">
+                            <li>Completed online courses from MIT and the University of Michigan, along with a new course on Introduction to ML Safety.</li>
+                            <li>Final project on the emergence of power-seeking AI and its potential existential threat, available <a href="#">here</a>.</li>
+                        </ul>
                     </div>
-                    <ul class="cv-entry-list">
-                        <li>Completed online courses from MIT and the University of Michigan, along with a new course on Introduction to ML Safety.</li>
-                        <li>Final project on the emergence of power-seeking AI and its potential existential threat, available <a href="#">here</a>.</li>
-                    </ul>
                 </div>
             </div>
             
             <!-- Teaching Experience Section -->
             <div class="cv-section">
-                <h2 class="cv-section-title">TEACHING EXPERIENCE</h2>
+                <h2 class="cv-section-title">
+                    <span class="section-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 3v18h18"></path>
+                            <path d="M18 17V9"></path>
+                            <path d="M13 17V5"></path>
+                            <path d="M8 17v-3"></path>
+                        </svg>
+                    </span>
+                    TEACHING EXPERIENCE
+                </h2>
                 
                 <div class="cv-entry">
-                    <div class="cv-entry-header">
-                        <h3 class="cv-entry-title">Vrije Universiteit Amsterdam, VU Amsterdam</h3>
-                        <span class="cv-entry-date">Feb 2023 – Jun 2023</span>
+                    <div class="entry-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 20v-6M6 20V10M18 20V4"></path>
+                        </svg>
                     </div>
-                    <div class="cv-entry-subtitle">
-                        <span>Teaching Assistant in Probability Theory</span>
-                        <span class="cv-entry-location">Amsterdam, Netherlands</span>
+                    <div class="cv-entry-content">
+                        <div class="cv-entry-header">
+                            <h3 class="cv-entry-title">Vrije Universiteit Amsterdam, VU Amsterdam</h3>
+                            <span class="cv-entry-date">Feb 2023 – Jun 2023</span>
+                        </div>
+                            <div class="cv-entry-subtitle">
+                                <span>Teaching Assistant in Probability Theory</span>
+                                <span class="cv-entry-location">Amsterdam, Netherlands</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
                 <div class="cv-entry">
-                    <div class="cv-entry-header">
-                        <h3 class="cv-entry-title">Vrije Universiteit Amsterdam, VU Amsterdam</h3>
-                        <span class="cv-entry-date">Sept 2022 – Jan 2023</span>
+                    <div class="entry-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                        </svg>
                     </div>
-                    <div class="cv-entry-subtitle">
-                        <span>Teaching Assistant in Single Variable Calculus and Linear Algebra</span>
-                        <span class="cv-entry-location">Amsterdam, Netherlands</span>
+                    <div class="cv-entry-content">
+                        <div class="cv-entry-header">
+                            <h3 class="cv-entry-title">Vrije Universiteit Amsterdam, VU Amsterdam</h3>
+                            <span class="cv-entry-date">Sept 2022 – Jan 2023</span>
+                        </div>
+                        <div class="cv-entry-subtitle">
+                            <span>Teaching Assistant in Single Variable Calculus and Linear Algebra</span>
+                            <span class="cv-entry-location">Amsterdam, Netherlands</span>
+                        </div>
+                        <ul class="cv-entry-list">
+                            <li>Led weekly sessions for 20-40 students, reviewing lectures and assisting with problem sets.</li>
+                        </ul>
                     </div>
-                    <ul class="cv-entry-list">
-                        <li>Led weekly sessions for 20-40 students, reviewing lectures and assisting with problem sets.</li>
-                    </ul>
                 </div>
             </div>
             
             <!-- Leadership Experience Section -->
             <div class="cv-section">
-                <h2 class="cv-section-title">LEADERSHIP EXPERIENCE</h2>
+                <h2 class="cv-section-title">
+                    <span class="section-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="8.5" cy="7" r="4"></circle>
+                            <polyline points="17 11 19 13 23 9"></polyline>
+                        </svg>
+                    </span>
+                    LEADERSHIP EXPERIENCE
+                </h2>
                 
                 <div class="cv-entry">
-                    <div class="cv-entry-header">
-                        <h3 class="cv-entry-title">Altan.ai</h3>
-                        <span class="cv-entry-date">Jan 2022 – January 2023</span>
+                    <div class="entry-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 16a4 4 0 0 0 0-8"></path>
+                            <path d="M12 2v2"></path>
+                            <path d="M12 20v2"></path>
+                            <path d="M20 12h2"></path>
+                            <path d="M2 12h2"></path>
+                        </svg>
                     </div>
-                    <div class="cv-entry-subtitle">
-                        <span>Founding Engineer</span>
-                        <span class="cv-entry-location">Barcelona, Spain</span>
+                    <div class="cv-entry-content">
+                        <div class="cv-entry-header">
+                            <h3 class="cv-entry-title">Altan.ai</h3>
+                            <span class="cv-entry-date">Jan 2022 – January 2023</span>
+                        </div>
+                        <div class="cv-entry-subtitle">
+                            <span>Founding Engineer</span>
+                            <span class="cv-entry-location">Barcelona, Spain</span>
+                        </div>
+                        <ul class="cv-entry-list">
+                            <li>Developed a multi-armed bandit algorithm for budget optimization for a marketing agency client and built a platform for easy chatbot integration on websites.</li>
+                        </ul>
                     </div>
-                    <ul class="cv-entry-list">
-                        <li>Developed a multi-armed bandit algorithm for budget optimization for a marketing agency client and built a platform for easy chatbot integration on websites.</li>
-                    </ul>
                 </div>
             </div>
             
             <!-- ML Projects Section -->
             <div class="cv-section">
-                <h2 class="cv-section-title">MACHINE LEARNING PROJECTS</h2>
+                <h2 class="cv-section-title">
+                    <span class="section-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                            <polyline points="2 17 12 22 22 17"></polyline>
+                            <polyline points="2 12 12 17 22 12"></polyline>
+                        </svg>
+                    </span>
+                    MACHINE LEARNING PROJECTS
+                </h2>
                 
                 <div class="cv-entry">
-                    <div class="cv-entry-header">
-                        <h3 class="cv-entry-title">Segmenting Glomeruli Functional Tissue Units</h3>
-                        <span class="cv-entry-date">Fall 2023</span>
+                    <div class="entry-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path>
+                            <circle cx="12" cy="12" r="3"></circle>
+                        </svg>
                     </div>
-                    <div class="cv-entry-subtitle">
-                        <span>Final project for the Machine Learning class (CZ4041) at NTU Singapore</span>
-                        <span class="cv-entry-location">Singapore</span>
+                    <div class="cv-entry-content">
+                        <div class="cv-entry-header">
+                            <h3 class="cv-entry-title">Segmenting Glomeruli Functional Tissue Units</h3>
+                            <span class="cv-entry-date">Fall 2023</span>
+                        </div>
+                        <div class="cv-entry-subtitle">
+                            <span>Final project for the Machine Learning class (CZ4041) at NTU Singapore</span>
+                            <span class="cv-entry-location">Singapore</span>
+                        </div>
+                        <ul class="cv-entry-list">
+                            <li>Developed and optimized a U-Net-based segmentation process for precise identification and analysis of Glomeruli Functional Tissue Units in kidney tissues.</li>
+                            <li>Code available at github.com/antoniofrancaib and project available <a href="#">here</a>.</li>
+                        </ul>
                     </div>
-                    <ul class="cv-entry-list">
-                        <li>Developed and optimized a U-Net-based segmentation process for precise identification and analysis of Glomeruli Functional Tissue Units in kidney tissues.</li>
-                        <li>Code available at github.com/antoniofrancaib and project available <a href="#">here</a>.</li>
-                    </ul>
                 </div>
                 
                 <div class="cv-entry">
-                    <div class="cv-entry-header">
-                        <h3 class="cv-entry-title">Cross-Domain Sentiment Classification with Domain-Adaptive Neural Networks</h3>
-                        <span class="cv-entry-date">Fall 2023</span>
+                    <div class="entry-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <path d="M10 12a1 1 0 0 0-1 1v1a1 1 0 0 1-1 1 1 1 0 0 1 1 1v1a1 1 0 0 0 1 1"></path>
+                            <path d="M14 18a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1 1 1 0 0 1-1-1v-1a1 1 0 0 0-1-1"></path>
+                        </svg>
                     </div>
-                    <div class="cv-entry-subtitle">
-                        <span>Project for the Deep Learning & Neural Networks class (CZ4042) at NTU Singapore</span>
-                        <span class="cv-entry-location">Singapore</span>
+                    <div class="cv-entry-content">
+                        <div class="cv-entry-header">
+                            <h3 class="cv-entry-title">Cross-Domain Sentiment Classification with Domain-Adaptive Neural Networks</h3>
+                            <span class="cv-entry-date">Fall 2023</span>
+                        </div>
+                        <div class="cv-entry-subtitle">
+                            <span>Project for the Deep Learning & Neural Networks class (CZ4042) at NTU Singapore</span>
+                            <span class="cv-entry-location">Singapore</span>
+                        </div>
+                        <ul class="cv-entry-list">
+                            <li>Implemented a novel Adversarial Domain Adaptation (ADA) approach for Cross-Domain Sentiment Classification (CDSC) that enhances model robustness across diverse domains.</li>
+                            <li>Project report available <a href="#">here</a>.</li>
+                        </ul>
                     </div>
-                    <ul class="cv-entry-list">
-                        <li>Implemented a novel Adversarial Domain Adaptation (ADA) approach for Cross-Domain Sentiment Classification (CDSC) that enhances model robustness across diverse domains.</li>
-                        <li>Project report available <a href="#">here</a>.</li>
-                    </ul>
                 </div>
             </div>
             
             <!-- Outreach Section -->
             <div class="cv-section">
-                <h2 class="cv-section-title">OUTREACH AND SERVICE</h2>
+                <h2 class="cv-section-title">
+                    <span class="section-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </span>
+                    OUTREACH AND SERVICE
+                </h2>
                 
                 <div class="cv-entry">
-                    <div class="cv-entry-header">
-                        <h3 class="cv-entry-title">Menú Por El Planeta (non-profit)</h3>
-                        <span class="cv-entry-date">Sept 2019 – Jun 2021</span>
+                    <div class="entry-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 12h18"></path>
+                            <path d="M3 6h18"></path>
+                            <path d="M3 18h18"></path>
+                        </svg>
                     </div>
-                    <div class="cv-entry-subtitle">
-                        <span>Co-Founder</span>
-                        <span class="cv-entry-location">Barcelona, Spain</span>
+                    <div class="cv-entry-content">
+                        <div class="cv-entry-header">
+                            <h3 class="cv-entry-title">Menú Por El Planeta (non-profit)</h3>
+                            <span class="cv-entry-date">Sept 2019 – Jun 2021</span>
+                        </div>
+                        <div class="cv-entry-subtitle">
+                            <span>Co-Founder</span>
+                            <span class="cv-entry-location">Barcelona, Spain</span>
+                        </div>
+                        <ul class="cv-entry-list">
+                            <li>Non-profit organization that assists Spanish universities in transitioning to a more sustainable food offer.</li>
+                            <li>Responsible for fund-raising, organisation, supervision of employees and strategic decisions.</li>
+                            <li>Supported by grants from VegFund, Animal Charity Evaluators, and ProVeg.</li>
+                        </ul>
                     </div>
-                    <ul class="cv-entry-list">
-                        <li>Non-profit organization that assists Spanish universities in transitioning to a more sustainable food offer.</li>
-                        <li>Responsible for fund-raising, organisation, supervision of employees and strategic decisions.</li>
-                        <li>Supported by grants from VegFund, Animal Charity Evaluators, and ProVeg.</li>
-                    </ul>
                 </div>
                 
                 <div class="cv-entry">
-                    <div class="cv-entry-header">
-                        <h3 class="cv-entry-title">Estudiante Por Los Animales</h3>
-                        <span class="cv-entry-date">Jan 2019 – Jun 2020</span>
+                    <div class="entry-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                            <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                        </svg>
                     </div>
-                    <div class="cv-entry-subtitle">
-                        <span>Co-Organizer</span>
-                        <span class="cv-entry-location">Barcelona, Spain</span>
+                    <div class="cv-entry-content">
+                        <div class="cv-entry-header">
+                            <h3 class="cv-entry-title">Estudiante Por Los Animales</h3>
+                            <span class="cv-entry-date">Jan 2019 – Jun 2020</span>
+                        </div>
+                        <div class="cv-entry-subtitle">
+                            <span>Co-Organizer</span>
+                            <span class="cv-entry-location">Barcelona, Spain</span>
+                        </div>
+                        <ul class="cv-entry-list">
+                            <li>Organized talks, conferences, and group readings to promote the moral consideration of non-human animals.</li>
+                        </ul>
                     </div>
-                    <ul class="cv-entry-list">
-                        <li>Organized talks, conferences, and group readings to promote the moral consideration of non-human animals.</li>
-                    </ul>
                 </div>
             </div>
             
             <!-- Honors Section -->
             <div class="cv-section">
-                <h2 class="cv-section-title">SELECTED HONORS</h2>
+                <h2 class="cv-section-title">
+                    <span class="section-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="8" r="7"></circle>
+                            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                        </svg>
+                    </span>
+                    SELECTED HONORS
+                </h2>
                 
                 <div class="cv-entry">
-                    <div class="cv-entry-header">
-                        <h3 class="cv-entry-title">Cum Laude Distinction</h3>
-                        <span class="cv-entry-date">2024</span>
+                    <div class="entry-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
                     </div>
-                    <ul class="cv-entry-list">
-                        <li>Graduated in the top 2% of my cohort in the BSc program in Mathematics.</li>
-                    </ul>
+                    <div class="cv-entry-content">
+                        <div class="cv-entry-header">
+                            <h3 class="cv-entry-title">Cum Laude Distinction</h3>
+                            <span class="cv-entry-date">2024</span>
+                        </div>
+                        <ul class="cv-entry-list">
+                            <li>Graduated in the top 2% of my cohort in the BSc program in Mathematics.</li>
+                        </ul>
+                    </div>
                 </div>
                 
                 <div class="cv-entry">
-                    <div class="cv-entry-header">
-                        <h3 class="cv-entry-title">CRM Fellowship Award</h3>
-                        <span class="cv-entry-date">2024</span>
+                    <div class="entry-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>
+                            <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+                            <path d="M12 11h4"></path>
+                            <path d="M12 16h4"></path>
+                            <path d="M8 11h.01"></path>
+                            <path d="M8 16h.01"></path>
+                        </svg>
                     </div>
-                    <ul class="cv-entry-list">
-                        <li>I was awarded a grant to conduct undergraduate research in computational neuroscience under the supervision of Dr. Alexander Roxin.</li>
-                    </ul>
+                    <div class="cv-entry-content">
+                        <div class="cv-entry-header">
+                            <h3 class="cv-entry-title">CRM Fellowship Award</h3>
+                            <span class="cv-entry-date">2024</span>
+                        </div>
+                        <ul class="cv-entry-list">
+                            <li>I was awarded a grant to conduct undergraduate research in computational neuroscience under the supervision of Dr. Alexander Roxin.</li>
+                        </ul>
+                    </div>
                 </div>
                 
                 <div class="cv-entry">
-                    <div class="cv-entry-header">
-                        <h3 class="cv-entry-title">GLOBE scholarship (top <1%)</h3>
-                        <span class="cv-entry-date">2023</span>
+                    <div class="entry-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 16a4 4 0 0 0 0-8"></path>
+                            <path d="M12 2v2"></path>
+                            <path d="M12 20v2"></path>
+                            <path d="M20 12h2"></path>
+                            <path d="M2 12h2"></path>
+                        </svg>
                     </div>
-                    <ul class="cv-entry-list">
-                        <li>This scholarship is intended for talented students who want to study at a partner institution. Awarded to 10 students (out of ∼1000 applicants) within VU Amsterdam.</li>
-                    </ul>
+                    <div class="cv-entry-content">
+                        <div class="cv-entry-header">
+                            <h3 class="cv-entry-title">GLOBE scholarship (top <1%)</h3>
+                            <span class="cv-entry-date">2023</span>
+                        </div>
+                        <ul class="cv-entry-list">
+                            <li>This scholarship is intended for talented students who want to study at a partner institution. Awarded to 10 students (out of ∼1000 applicants) within VU Amsterdam.</li>
+                        </ul>
+                    </div>
                 </div>
                 
                 <div class="cv-entry">
-                    <div class="cv-entry-header">
-                        <h3 class="cv-entry-title">Honorable Mention at AI Safety Public Materials Bounty</h3>
-                        <span class="cv-entry-date">2023</span>
+                    <div class="entry-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 16a4 4 0 0 0 0-8"></path>
+                            <path d="M12 2v2"></path>
+                            <path d="M12 20v2"></path>
+                            <path d="M20 12h2"></path>
+                            <path d="M2 12h2"></path>
+                        </svg>
                     </div>
-                    <ul class="cv-entry-list">
-                        <li>I received an award for my blog post "Power-Seeking AI and Existential Risk".</li>
-                    </ul>
+                    <div class="cv-entry-content">
+                        <div class="cv-entry-header">
+                            <h3 class="cv-entry-title">Honorable Mention at AI Safety Public Materials Bounty</h3>
+                            <span class="cv-entry-date">2023</span>
+                        </div>
+                        <ul class="cv-entry-list">
+                            <li>I received an award for my blog post "Power-Seeking AI and Existential Risk".</li>
+                        </ul>
+                    </div>
                 </div>
                 
                 <div class="cv-entry">
-                    <div class="cv-entry-header">
-                        <h3 class="cv-entry-title">Long-Term Future Fund, LTFF</h3>
-                        <span class="cv-entry-date">2022</span>
+                    <div class="entry-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 16a4 4 0 0 0 0-8"></path>
+                            <path d="M12 2v2"></path>
+                            <path d="M12 20v2"></path>
+                            <path d="M20 12h2"></path>
+                            <path d="M2 12h2"></path>
+                        </svg>
                     </div>
-                    <ul class="cv-entry-list">
-                        <li>Personal Grant for projects relating to Machine Learning awarded by Open Philanthropy Project.</li>
-                    </ul>
+                    <div class="cv-entry-content">
+                        <div class="cv-entry-header">
+                            <h3 class="cv-entry-title">Long-Term Future Fund, LTFF</h3>
+                            <span class="cv-entry-date">2022</span>
+                        </div>
+                        <ul class="cv-entry-list">
+                            <li>Personal Grant for projects relating to Machine Learning awarded by Open Philanthropy Project.</li>
+                        </ul>
+                    </div>
                 </div>
                 
                 <div class="cv-entry">
-                    <div class="cv-entry-header">
-                        <h3 class="cv-entry-title">Science Immersion Program in Mathematics</h3>
-                        <span class="cv-entry-date">2018</span>
+                    <div class="entry-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 16a4 4 0 0 0 0-8"></path>
+                            <path d="M12 2v2"></path>
+                            <path d="M12 20v2"></path>
+                            <path d="M20 12h2"></path>
+                            <path d="M2 12h2"></path>
+                        </svg>
                     </div>
-                    <ul class="cv-entry-list">
-                        <li>Scholarship awarded by Spanish Science Ministry for outstanding academic achievements during high school.</li>
-                    </ul>
+                    <div class="cv-entry-content">
+                        <div class="cv-entry-header">
+                            <h3 class="cv-entry-title">Science Immersion Program in Mathematics</h3>
+                            <span class="cv-entry-date">2018</span>
+                        </div>
+                        <ul class="cv-entry-list">
+                            <li>Scholarship awarded by Spanish Science Ministry for outstanding academic achievements during high school.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             
