@@ -4,26 +4,20 @@ title: "don't break your windows"
 date: 2025-02-10
 ---
 
-The [broken windows theory](https://en.wikipedia.org/wiki/Broken_windows_theory) suggests that small signs of deterioration, like a broken window in an abandoned building, can lead to more chaos and disorder if not repaired promptly. In sociology, a compelling example could be the hypothesis that the accumulation of trash on the streets of Barcelona might have contributed to an increase in crime ([article](https://ddd.uab.cat/pub/artpub/2023/287681/intjougeo_a2023_v12n449.pdf)).
+In sociology, the ["Broken Windows" theory](https://en.wikipedia.org/wiki/Broken_windows_theory) suggests that small signs of deterioration, like a broken window in an abandoned building, can eventually lead to significant social deterioration. A compelling illustration of this hypothesis is found in several studies examining how the accumulation of trash in the streets statistically correlates with rising crime rates ([article](https://ddd.uab.cat/pub/artpub/2023/287681/intjougeo_a2023_v12n449.pdf)).
 
-On a personal level, every time you fail to commit to yourself, it's like a broken window in your system of discipline. If we allow these cracks to remain, they become entry points for disorder in other areas of life. Chaos, much like in the original theory, thrives on neglect.
+On a personal level, I find this concept especially powerful. Everyday small actions can disproportionately influence our capacity to achieve larger goals. Often, we don't even notice these tiny decisions' effects until we reflect retrospectively and spot a clear pattern.
 
-In my experience, I've seen how small, everyday actions can have a disproportionate impact on achieving larger goals. Something as simple as tidying up your room, making your bed at the start of the day, or dressing well not only organizes your environment but also your mind.
+For instance, simple actions such as making my bed in the morning or dressing thoughtfully have significant consequences. These small habits don't merely help me stay organized; they set the tone for discipline and attention throughout the day. Conversely, neglecting such minor routines creates small cracks that gradually erode discipline, acting much like broken windows do in a neighborhood.
 
-These actions create a sense of order that drives us to face the day with greater clarity. When these small victories are strung together, they put us in a state of optimal performance that can transform our daily goals.
+Breaking good habits—like skipping regular exercise, neglecting personal hygiene, or choosing unhealthy meals—might seem insignificant in the moment. Yet, these seemingly minor lapses erode our sense of discipline. And erosion is deceptively one-directional: it’s always easier to damage something working well than it is to restore it afterward.
 
-Of course, there are habits of greater significance, such as exercising regularly, eating healthily, or maintaining good hygiene—both physical and sleep-related. These not only improve our health but also strengthen our character.
+Why do small habits matter so much? They are the foundation of mental resilience. Consistently performing challenging actions isn’t merely a form of self-discipline—it’s training for mental toughness. Each challenge we overcome reinforces a sense of accomplishment, generating momentum that elevates our performance and self-respect.
 
-Breaking a healthy habit might seem insignificant in the moment, but that small crack can slowly erode our sense of discipline. And the problem with erosion is that it is asymmetrically one-directional: it's always easier to break something than to build it.
+This creates a virtuous cycle: the more consistently we confront and overcome small challenges, the more easily we maintain a state of excellence. Each achievement reinforces our self-image positively, driving a momentum that elevates our state of consciousness.
 
-Why does it make sense to wake up at 6 a.m., take cold showers, or tackle uncomfortable tasks? Beyond the tangible impact of these actions on our lives, the reason is simple: every time we confront something that takes effort, we gain control over our mind. These actions are not (just) an end in themselves; they are training for mental resilience.
+Conversely, neglecting these actions creates an invisible but harmful narrative—one where we subtly tell ourselves it’s acceptable to settle for mediocrity. The real danger isn't outright disaster; rather, it’s finding comfort in a suboptimal local maximum, quietly underutilizing our full potential.
 
-It's a virtuous cycle: the more consistent we are in doing challenging things, the easier it becomes to stay in a state of excellence. Each challenge overcome reinforces our sense of accomplishment, driving positive momentum that elevates us to a higher state of consciousness. That momentum—a chain of small personal victories—is what enables us to operate at our best.
+Every action shapes a narrative: you either demonstrate respect for yourself and life, or you're quietly diminishing your potential. Choosing to do hard things isn’t a punishment; it’s a privilege. It builds mental resilience, strengthens our character, and empowers us toward higher achievement.
 
-When we live outside that momentum, we fall into a state of life suboptimality. It's a place where our aspirations fade, where we settle for what is easy and comfortable, but also where dissatisfaction takes root. Suboptimality isn't necessarily a visible disaster; it's simply a silent underutilization of our potential.
-
-That's why every habit counts. Every small action you take reinforces a narrative: either you're moving toward your best self, or you're allowing the broken windows of procrastination and laziness to multiply.
-
-The key to thriving in all areas of life is to build momentum, maintain it, and leverage it to the fullest, taking full advantage of the power of compound interest. Doing hard things isn't a punishment; it's a privilege that empowers us to be better every day. In discipline lies true freedom.
-
-So, prepare in advance so that when you face moments of weakness, you'll remember: don't break your windows (nor let others break them). 
+That’s why each small action counts. Every choice either reinforces self-respect or chips away at it. By consistently choosing discipline, we build a narrative of strength and growth, ensuring we live closer to our full potential rather than settling for mediocrity.
