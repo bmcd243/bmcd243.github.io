@@ -136,6 +136,33 @@ cv_active: true
     .contact-info p {
         margin-bottom: var(--space-1);
     }
+    
+    /* General Information section styles */
+    .general-info-section {
+        margin-bottom: var(--space-16);
+    }
+    
+    .info-table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    
+    .info-table tr {
+        border-bottom: 1px solid var(--border-color);
+    }
+    
+    .info-table tr:last-child {
+        border-bottom: none;
+    }
+    
+    .info-table td {
+        padding: var(--space-3) var(--space-3) var(--space-3) 0;
+    }
+    
+    .info-table td:first-child {
+        width: 30%;
+        color: var(--text-secondary);
+    }
 </style>
 
 <main>
@@ -153,7 +180,27 @@ cv_active: true
                         Download CV
                     </a>
                 </div>
-                <p>My academic and professional journey in computational neuroscience and artificial intelligence research.</p>
+                <p>Summary of my education and experience. Download the PDF file for a detailed version and write me if you need an updated version of my CV.</p>
+            </div>
+            
+            <!-- General Information Section -->
+            <div class="cv-section general-info-section">
+                <h2 class="cv-section-title">GENERAL INFORMATION</h2>
+                
+                <table class="info-table">
+                    <tr>
+                        <td><strong>Full Name</strong></td>
+                        <td>Antonio Franca</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Languages</strong></td>
+                        <td>English, Spanish</td>
+                    </tr>
+                    <tr>
+                        <td><strong>My interests in one line</strong></td>
+                        <td>Difussion Models, Geometric Deep Learning, Generative Modeling</td>
+                    </tr>
+                </table>
             </div>
             
             <!-- Education Section -->
