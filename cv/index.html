@@ -70,8 +70,6 @@ cv_active: true
         font-size: 1.5rem;
         margin-bottom: var(--space-6);
         font-weight: 500;
-        padding-bottom: var(--space-2);
-        border-bottom: 1px solid var(--border-color);
     }
     
     .cv-entry {
@@ -174,61 +172,6 @@ cv_active: true
     .info-table td:first-child {
         width: 30%;
         color: var(--text-secondary);
-    }
-    
-    /* Icon styles */
-    .section-icon {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        margin-right: var(--space-3);
-        color: var(--primary);
-    }
-    
-    .entry-icon {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        width: 36px;
-        height: 36px;
-        min-width: 36px;
-        margin-right: var(--space-4);
-        border-radius: 50%;
-        background-color: var(--background-secondary);
-        color: var(--primary);
-        transition: all 0.2s ease;
-    }
-    
-    .entry-icon svg {
-        width: 20px;
-        height: 20px;
-    }
-    
-    .cv-entry:hover .entry-icon {
-        background-color: var(--primary);
-        color: white;
-        transform: translateY(-2px);
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-    
-    /* Dark theme adjustments */
-    [data-theme='dark'] .entry-icon {
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    }
-    
-    [data-theme='dark'] .cv-entry:hover .entry-icon {
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    }
-    
-    /* Enhanced entry layout */
-    .cv-entry {
-        margin-bottom: var(--space-8);
-        display: flex;
-        transition: all 0.2s ease;
-    }
-    
-    .cv-entry-content {
-        flex: 1;
     }
 </style>
 
