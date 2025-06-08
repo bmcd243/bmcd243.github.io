@@ -1,4 +1,4 @@
-# Antonio Franca's Personal Website
+# Ben McDowell's Personal Website
 
 This is the repository for my personal website, built with Jekyll and hosted on GitHub Pages.
 

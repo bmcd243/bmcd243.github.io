@@ -1,16 +1,15 @@
 {
   "site": {
-    "title": "Antonio Franca",
-    "description": "Personal academic website for Antonio Franca, PhD student in Computer Science at the University of Cambridge",
+    "title": "Ben McDowell",
+    "description": "Personal academic website for Ben McDowell, Computer Science and AI Student at the University of Bath.",
     "baseUrl": "/",
     "language": "en",
-    "author": "Antonio Franca"
+    "author": "Ben McDowell"
   },
   "social": {
-    "github": "https://github.com/antoniofranca",
-    "twitter": "https://twitter.com/antoniofranca",
-    "googleScholar": "https://scholar.google.com/citations?user=antonio-franca",
-    "email": "antonio.franca@example.com"
+    "github": "https://github.com/bmcd243",
+    "linkedin": "https://www.linkedin.com/in/ben-mcd/",
+    "email": "benmcdowelluk@gmail.com"
   },
   "navigation": [
     { "name": "home", "path": "index.html" },

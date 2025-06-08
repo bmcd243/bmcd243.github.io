@@ -1,12 +1,11 @@
 # Site settings
-title: Antonio Franca | ML Researcher
-email: your-email@example.com
+title: Ben McDowell
+email: benmcdowelluk@gmail.com
 description: >-
-  Personal website of Antonio Franca, Machine Learning researcher 
-  focusing on computational neuroscience and AI.
+  Personal website of Ben McDowell, Computer Science and AI Student at the University of Bath.
 baseurl: "" # For user or organization sites, leave this empty
-url: "https://antoniofranca.github.io" # Replace with your GitHub Pages URL
-author: Antonio Franca
+url: "https://bmcd243.github.io" # Replace with your GitHub Pages URL
+author: Ben McDowell
 
 # Collections
 collections:
@@ -52,9 +51,8 @@ exclude:
 
 # Social links
 social:
-  twitter: https://twitter.com/antoniofranca
-  github: https://github.com/antoniofranca
-  google_scholar: https://scholar.google.com/citations?user=antonio-franca
+  github: https://github.com/bmcd243
+  linkedin: https://www.linkedin.com/in/ben-mcd
 
 # Navigation
 navigation:
