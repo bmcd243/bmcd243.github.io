@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: post
 title: "don't break your windows"
 date: 2025-02-10
@@ -18,4 +18,4 @@ It’s a virtuous cycle: the more consistent we are in doing challenging things,
 
 Avoid that place where aspirations fade, where we settle for what is easy and comfortable at the moment, because it’s the same place where dissatisfaction and unhappiness takes root. The worst place is not necessarily a visible disaster; it might be a very suboptimal local maximum, a silent underexploitation of our potential.
 
-That’s why every action reinforces a narrative: either you act with self-respect and intention, or you give in to weakness. Take always the pain upfront, and be prepared in advance so that when you face that moment of weakness, you’ll remember: don’t break your windows.
+That’s why every action reinforces a narrative: either you act with self-respect and intention, or you give in to weakness. Take always the pain upfront, and be prepared in advance so that when you face that moment of weakness, you’ll remember: don’t break your windows. -->
