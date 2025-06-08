@@ -389,7 +389,7 @@ footer p {
 
 .profile-image img {
     width: 150px;
-    height: 150px;
+    height: 200px;
     border-radius: 50%;
     object-fit: cover;
     object-position: top;
