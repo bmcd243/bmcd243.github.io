@@ -98,7 +98,7 @@ wip: true
 
   <div class="project-links">
     <a href="#">PDF (coming soon)</a>
-    <a href="https://github.com/bm844">Code</a>
+    <a href="https://github.com/bmcd243/url_benchmark_clip/">Code</a>
     <a href="#">Videos (coming soon)</a>
   </div>
 
