@@ -7,60 +7,52 @@ permalink: /research/semantically-grounded-unsupervised-skill-discovery-via-visi
 
 # Semantically Grounded Unsupervised Skill Discovery via Vision-Language Models
 
-## Project Overview
+**Bachelor's Dissertation** · University of Bath · 2026
 
-Unsupervised skill discovery is a promising route toward generally capable agents, especially when rewards are sparse, expensive to define, or unavailable. Instead of training for one fixed task, agents discover reusable skills that can later be composed and adapted.
+[PDF](#) · [Code](https://github.com/bm844) · [Videos](#)
 
-The main limitation in many existing methods is semantic ambiguity: discovered skills can be diverse but hard to interpret. This project investigates how pretrained vision-language models (VLMs) can provide semantic structure so discovered skills are both behaviorally diverse and human-describable.
+---
 
-## Motivation
+## Abstract
 
-Traditional unsupervised objectives are often geometry-driven, rewarding coverage or latent separability rather than concept-level meaning. As a result, many discovered skills are difficult to name, audit, or reuse.
+One or two sentence summary of the project and main finding.
 
-VLMs provide a strong prior by embedding observations into a representation space aligned with language. The project hypothesis is that adding VLM-based semantic grounding produces skill libraries that are more interpretable and more transferable to downstream tasks.
+---
 
-## Method
+## Overview
 
-The framework has four core components:
+Brief paragraph explaining the problem, your approach, and why it matters. Non-specialist friendly.
 
-1. Skill-conditioned policy $\pi(a_t \mid s_t, z)$ with a latent skill variable $z$.
-2. Frozen VLM encoder that maps observations to semantic embeddings.
-3. Combined objective balancing skill identifiability, semantic separation, and behavioral stability.
-4. Post-hoc language alignment for automatic skill labeling and retrieval.
+---
 
-Trajectory-level semantic representation:
+## Approach
 
-$$
-e_t = f_{\text{VLM}}(o_t), \quad E(\tau) = g(e_1, e_2, \dots, e_T)
-$$
+- Frozen CLIP ViT-B/32 as a drop-in replacement for the CNN encoder in URLB
+- Textured MuJoCo environments designed to activate CLIP's visual priors
+- Evaluated on DIAYN and APS across three locomotion domains
 
-Training objective (simplified):
+---
 
-$$
-\mathcal{L} = \lambda_1 \mathcal{L}_{\text{MI}}(z, \tau) + \lambda_2 \mathcal{L}_{\text{sem-sep}}(E(\tau), z) + \lambda_3 \mathcal{L}_{\text{stability}}
-$$
+## Results
 
-## Expected Contributions
+Key finding in one sentence. Include your best result number if it tells a good story.
 
-- Semantically interpretable unsupervised skills.
-- Better skill reuse and transfer in downstream policy learning.
-- Language-based skill inspection, selection, and debugging.
-- Evaluation protocol combining behavior diversity with semantic metrics.
+![t-SNE visualisation of CLIP vs CNN embeddings](#)
 
-## Limitations and Risks
+---
 
-- Semantic aliasing between behaviorally distinct trajectories.
-- VLM blind spots for non-visual or hidden state variables.
-- Reward hacking against embedding-space objectives.
-- Domain mismatch between pretrained VLM data and target environments.
+## Qualitative Results
 
-## Evaluation Plan
+Embed or link to eval videos showing learned skills across environments.
 
-- Diversity and consistency of discovered skills.
-- Language-to-skill retrieval quality.
-- Downstream adaptation efficiency.
-- Human interpretability assessment.
+---
 
-## Summary
-
-This project studies whether foundation-model semantics can turn unsupervised exploration into meaningful skill discovery. If successful, the resulting skill libraries should be easier to understand, safer to deploy, and more effective as reusable building blocks for generalist agents.
+## Citation
+```bibtex
+@thesis{yourname2026,
+  title={Semantically Grounded Unsupervised Skill Discovery via Vision-Language Models},
+  author={Your Name},
+  year={2026},
+  school={University of Bath}
+}
+```
