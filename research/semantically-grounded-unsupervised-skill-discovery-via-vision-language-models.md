@@ -38,7 +38,7 @@ wip: true
     border: 1px solid var(--border-color);
     border-left: 4px solid var(--primary);
     border-radius: 8px;
-    padding: var(--space-4) var(--space-5);
+    padding: var(--space-6) var(--space-7);
     background: var(--background-secondary);
     margin-bottom: var(--space-8);
   }
@@ -51,7 +51,7 @@ wip: true
   .project-card {
     border: 1px solid var(--border-color);
     border-radius: 8px;
-    padding: var(--space-5);
+    padding: var(--space-7);
     margin-bottom: var(--space-6);
   }
 
@@ -75,7 +75,7 @@ wip: true
     margin-top: var(--space-8);
     border: 1px dashed var(--border-color);
     border-radius: 8px;
-    padding: var(--space-4) var(--space-5);
+    padding: var(--space-6) var(--space-7);
     background: var(--background-secondary);
   }
 
