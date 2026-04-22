@@ -334,45 +334,69 @@ wip: true
     </div>
   </div>
 
-  <!-- Walker -->
-  <div class="tab-panel" id="pretrain-walker">
-    <p class="section-subheading">DIAYN CLIP</p>
-    <div class="video-grid">
+ <!-- Walker -->
+<div class="tab-panel" id="pretrain-walker">
+  <p class="section-subheading">DIAYN CLIP — 16 skills</p>
+  <div class="video-grid">
+    {% assign diayn_clip_walker = "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15" | split: "," %}
+    {% assign diayn_clip_walker_files = "video_skill0_4223_2080755100ee0dbb6044.gif,video_skill1_4224_e75c4a02b5ec03ae8af0.gif,video_skill2_4225_e81ddc755811fdb1e57e.gif,video_skill3_4005_54498687b8f10a678dbf.gif,video_skill4_4006_953fd08cb08a31258c71.gif,video_skill5_4007_215580d085c1a69b7ddb.gif,video_skill6_4008_01b1c21c199f1bf8ae8b.gif,video_skill7_4009_d8eee9412d821c859090.gif,video_skill8_4010_74e095b15c232f90ddd2.gif,video_skill9_4216_ffb63da55b97bd4736b8.gif,video_skill10_4217_2001b7372bc0ad44546a.gif,video_skill11_4218_6241a06a1369e1bbadfb.gif,video_skill12_4219_abb0e89f5bf0a8549e83.gif,video_skill13_4220_cb57595346bb21630c40.gif,video_skill14_4221_9c8299eb54b0c03d82d9.gif,video_skill15_4222_526c31647f91b9e3aebc.gif" | split: "," %}
+    {% for i in diayn_clip_walker %}
+      {% assign file = diayn_clip_walker_files[forloop.index0] %}
       <div class="video-item">
-        <div class="video-placeholder">coming soon</div>
-        <div class="video-caption"><strong>Skill 1</strong>Textured Walker · DIAYN CLIP</div>
+        <img src="/assets/videos/diayn_clip_walker/{{ file }}" alt="DIAYN CLIP Walker Skill {{ i }}" style="width:100%;display:block;">
+        <div class="video-caption"><strong>Skill {{ i }}</strong>Textured Walker · DIAYN CLIP</div>
       </div>
-      <div class="video-item">
-        <div class="video-placeholder">coming soon</div>
-        <div class="video-caption"><strong>Skill 2</strong>Textured Walker · DIAYN CLIP</div>
-      </div>
-    </div>
-    <p class="section-subheading">APS CLIP</p>
-    <div class="video-grid">
-      <div class="video-item">
-        <div class="video-placeholder">coming soon</div>
-        <div class="video-caption"><strong>Skill 1</strong>Textured Walker · APS CLIP</div>
-      </div>
-    </div>
+    {% endfor %}
   </div>
 
-  <!-- Cheetah -->
-  <div class="tab-panel" id="pretrain-cheetah">
-    <p class="section-subheading">DIAYN CLIP</p>
-    <div class="video-grid">
-      <div class="video-item">
-        <div class="video-placeholder">coming soon</div>
-        <div class="video-caption"><strong>Skill 1</strong>Textured Cheetah · DIAYN CLIP</div>
-      </div>
-    </div>
-    <p class="section-subheading">APS CLIP</p>
-    <div class="video-grid">
-      <div class="video-item">
-        <div class="video-placeholder">coming soon</div>
-        <div class="video-caption"><strong>Skill 1</strong>Textured Cheetah · APS CLIP</div>
-      </div>
-    </div>
+  <p class="section-subheading">DIAYN CNN — 16 skills</p>
+  <div class="video-grid">
+    <div class="video-item"><img src="/assets/videos/diayn_cnn_walker/video_skill0_1052_61768ff6c24af0912268.gif" alt="Skill 0" style="width:100%;display:block;"><div class="video-caption"><strong>Skill 0</strong>Textured Walker · DIAYN CNN</div></div>
+    <div class="video-item"><img src="/assets/videos/diayn_cnn_walker/video_skill1_1053_97af6de85585f048a1bd.gif" alt="Skill 1" style="width:100%;display:block;"><div class="video-caption"><strong>Skill 1</strong>Textured Walker · DIAYN CNN</div></div>
+    <div class="video-item"><img src="/assets/videos/diayn_cnn_walker/video_skill2_1054_222be64aaebae8770ff7.gif" alt="Skill 2" style="width:100%;display:block;"><div class="video-caption"><strong>Skill 2</strong>Textured Walker · DIAYN CNN</div></div>
+    <div class="video-item"><img src="/assets/videos/diayn_cnn_walker/video_skill3_1055_f68ec34dc1c6c6cf893e.gif" alt="Skill 3" style="width:100%;display:block;"><div class="video-caption"><strong>Skill 3</strong>Textured Walker · DIAYN CNN</div></div>
+    <div class="video-item"><img src="/assets/videos/diayn_cnn_walker/video_skill4_1056_33bd976ebca939d4c7dd.gif" alt="Skill 4" style="width:100%;display:block;"><div class="video-caption"><strong>Skill 4</strong>Textured Walker · DIAYN CNN</div></div>
+    <div class="video-item"><img src="/assets/videos/diayn_cnn_walker/video_skill5_1262_9f980eda2a4b566a93bd.gif" alt="Skill 5" style="width:100%;display:block;"><div class="video-caption"><strong>Skill 5</strong>Textured Walker · DIAYN CNN</div></div>
+    <div class="video-item"><img src="/assets/videos/diayn_cnn_walker/video_skill6_1263_fd6041b4f3da6564200a.gif" alt="Skill 6" style="width:100%;display:block;"><div class="video-caption"><strong>Skill 6</strong>Textured Walker · DIAYN CNN</div></div>
+    <div class="video-item"><img src="/assets/videos/diayn_cnn_walker/video_skill7_1264_efbbb0592c17173d6044.gif" alt="Skill 7" style="width:100%;display:block;"><div class="video-caption"><strong>Skill 7</strong>Textured Walker · DIAYN CNN</div></div>
+    <div class="video-item"><img src="/assets/videos/diayn_cnn_walker/video_skill8_1265_b327ac2ea029ca5063fe.gif" alt="Skill 8" style="width:100%;display:block;"><div class="video-caption"><strong>Skill 8</strong>Textured Walker · DIAYN CNN</div></div>
+    <div class="video-item"><img src="/assets/videos/diayn_cnn_walker/video_skill9_1266_056a85bf6e5fd67cf35a.gif" alt="Skill 9" style="width:100%;display:block;"><div class="video-caption"><strong>Skill 9</strong>Textured Walker · DIAYN CNN</div></div>
+    <div class="video-item"><img src="/assets/videos/diayn_cnn_walker/video_skill10_1267_ab928998d617d5c957f5.gif" alt="Skill 10" style="width:100%;display:block;"><div class="video-caption"><strong>Skill 10</strong>Textured Walker · DIAYN CNN</div></div>
+    <div class="video-item"><img src="/assets/videos/diayn_cnn_walker/video_skill11_1268_8d953163af8960f48437.gif" alt="Skill 11" style="width:100%;display:block;"><div class="video-caption"><strong>Skill 11</strong>Textured Walker · DIAYN CNN</div></div>
+    <div class="video-item"><img src="/assets/videos/diayn_cnn_walker/video_skill12_1269_a7cbb5e6ad7bffb75182.gif" alt="Skill 12" style="width:100%;display:block;"><div class="video-caption"><strong>Skill 12</strong>Textured Walker · DIAYN CNN</div></div>
+    <div class="video-item"><img src="/assets/videos/diayn_cnn_walker/video_skill13_1270_c752a928244860151dc6.gif" alt="Skill 13" style="width:100%;display:block;"><div class="video-caption"><strong>Skill 13</strong>Textured Walker · DIAYN CNN</div></div>
+    <div class="video-item"><img src="/assets/videos/diayn_cnn_walker/video_skill14_1271_606f93184bcaf7a0ed14.gif" alt="Skill 14" style="width:100%;display:block;"><div class="video-caption"><strong>Skill 14</strong>Textured Walker · DIAYN CNN</div></div>
+    <div class="video-item"><img src="/assets/videos/diayn_cnn_walker/video_skill15_1051_d3cf41f743a5a6eba66c.gif" alt="Skill 15" style="width:100%;display:block;"><div class="video-caption"><strong>Skill 15</strong>Textured Walker · DIAYN CNN</div></div>
   </div>
+
+  <p class="section-subheading">APS CLIP — 10 skills</p>
+  <div class="video-grid">
+    <div class="video-item"><img src="/assets/videos/aps_clip_walker/video_skill0_4216_a942741760313b579f4c.gif" alt="Skill 0" style="width:100%;display:block;"><div class="video-caption"><strong>Skill 0</strong>Textured Walker · APS CLIP</div></div>
+    <div class="video-item"><img src="/assets/videos/aps_clip_walker/video_skill1_4217_2ea4485520609b4bbc55.gif" alt="Skill 1" style="width:100%;display:block;"><div class="video-caption"><strong>Skill 1</strong>Textured Walker · APS CLIP</div></div>
+    <div class="video-item"><img src="/assets/videos/aps_clip_walker/video_skill2_4218_70124a58b275acd8bf1b.gif" alt="Skill 2" style="width:100%;display:block;"><div class="video-caption"><strong>Skill 2</strong>Textured Walker · APS CLIP</div></div>
+    <div class="video-item"><img src="/assets/videos/aps_clip_walker/video_skill3_4219_efc81ef87208f02623e4.gif" alt="Skill 3" style="width:100%;display:block;"><div class="video-caption"><strong>Skill 3</strong>Textured Walker · APS CLIP</div></div>
+    <div class="video-item"><img src="/assets/videos/aps_clip_walker/video_skill4_4220_c858761590c270c22d30.gif" alt="Skill 4" style="width:100%;display:block;"><div class="video-caption"><strong>Skill 4</strong>Textured Walker · APS CLIP</div></div>
+    <div class="video-item"><img src="/assets/videos/aps_clip_walker/video_skill5_4221_42ee25eb974fa88e200f.gif" alt="Skill 5" style="width:100%;display:block;"><div class="video-caption"><strong>Skill 5</strong>Textured Walker · APS CLIP</div></div>
+    <div class="video-item"><img src="/assets/videos/aps_clip_walker/video_skill6_4222_ffb4ed53160a6ad16dd6.gif" alt="Skill 6" style="width:100%;display:block;"><div class="video-caption"><strong>Skill 6</strong>Textured Walker · APS CLIP</div></div>
+    <div class="video-item"><img src="/assets/videos/aps_clip_walker/video_skill7_4223_0fc44056b8a71ff5ba52.gif" alt="Skill 7" style="width:100%;display:block;"><div class="video-caption"><strong>Skill 7</strong>Textured Walker · APS CLIP</div></div>
+    <div class="video-item"><img src="/assets/videos/aps_clip_walker/video_skill8_4224_d5df988e8cb9383f3ef9.gif" alt="Skill 8" style="width:100%;display:block;"><div class="video-caption"><strong>Skill 8</strong>Textured Walker · APS CLIP</div></div>
+    <div class="video-item"><img src="/assets/videos/aps_clip_walker/video_skill9_4225_32d59bcabf34965f571a.gif" alt="Skill 9" style="width:100%;display:block;"><div class="video-caption"><strong>Skill 9</strong>Textured Walker · APS CLIP</div></div>
+  </div>
+
+  <p class="section-subheading">APS CNN — 10 skills</p>
+  <div class="video-grid">
+    <div class="video-item"><img src="/assets/videos/aps_cnn_walker/video_skill0_1684_d5c8e661becebe26b5e9.gif" alt="Skill 0" style="width:100%;display:block;"><div class="video-caption"><strong>Skill 0</strong>Textured Walker · APS CNN</div></div>
+    <div class="video-item"><img src="/assets/videos/aps_cnn_walker/video_skill1_1685_def2381b0f17baea6e7b.gif" alt="Skill 1" style="width:100%;display:block;"><div class="video-caption"><strong>Skill 1</strong>Textured Walker · APS CNN</div></div>
+    <div class="video-item"><img src="/assets/videos/aps_cnn_walker/video_skill2_1686_ba531830a55530683721.gif" alt="Skill 2" style="width:100%;display:block;"><div class="video-caption"><strong>Skill 2</strong>Textured Walker · APS CNN</div></div>
+    <div class="video-item"><img src="/assets/videos/aps_cnn_walker/video_skill3_1687_0ec7cb1776f3a91a4592.gif" alt="Skill 3" style="width:100%;display:block;"><div class="video-caption"><strong>Skill 3</strong>Textured Walker · APS CNN</div></div>
+    <div class="video-item"><img src="/assets/videos/aps_cnn_walker/video_skill4_1688_a50882b7f682636bb48c.gif" alt="Skill 4" style="width:100%;display:block;"><div class="video-caption"><strong>Skill 4</strong>Textured Walker · APS CNN</div></div>
+    <div class="video-item"><img src="/assets/videos/aps_cnn_walker/video_skill5_1689_6789f52d4060258f21c6.gif" alt="Skill 5" style="width:100%;display:block;"><div class="video-caption"><strong>Skill 5</strong>Textured Walker · APS CNN</div></div>
+    <div class="video-item"><img src="/assets/videos/aps_cnn_walker/video_skill6_1690_d5c046a260d7730c158f.gif" alt="Skill 6" style="width:100%;display:block;"><div class="video-caption"><strong>Skill 6</strong>Textured Walker · APS CNN</div></div>
+    <div class="video-item"><img src="/assets/videos/aps_cnn_walker/video_skill7_1691_5fb9adb09ee4266f158b.gif" alt="Skill 7" style="width:100%;display:block;"><div class="video-caption"><strong>Skill 7</strong>Textured Walker · APS CNN</div></div>
+    <div class="video-item"><img src="/assets/videos/aps_cnn_walker/video_skill8_1692_600ddcfdb4a32a8af765.gif" alt="Skill 8" style="width:100%;display:block;"><div class="video-caption"><strong>Skill 8</strong>Textured Walker · APS CNN</div></div>
+    <div class="video-item"><img src="/assets/videos/aps_cnn_walker/video_skill9_1693_f9ad72a174fcd2829343.gif" alt="Skill 9" style="width:100%;display:block;"><div class="video-caption"><strong>Skill 9</strong>Textured Walker · APS CNN</div></div>
+  </div>
+</div>
 
   <!-- ════════════════════════════════════════
        FINETUNING RESULTS
