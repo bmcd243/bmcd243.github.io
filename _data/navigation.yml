@@ -1,0 +1,22 @@
+---
+- label: Home
+  url: "/"
+  active_key: home_active
+  path: index.html
+- label: Blog
+  url: "/blog/"
+  active_key: blog_active
+  path: blog/index.html
+- label: Projects
+  url: "/research/"
+  active_key: research_active
+  path: research/index.html
+- label: Media Shelf
+  url: "/media/"
+  active_key: media_active
+  path: media/index.html
+- label: CV
+  url: "/assets/cv.pdf"
+  active_key: cv_active
+  path: assets/cv.pdf
+  target: _blank

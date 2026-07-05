@@ -175,6 +175,11 @@ nav {
     list-style: none;
 }
 
+.nav-item {
+    display: flex;
+    align-items: center;
+}
+
 .nav-links a {
     position: relative;
     font-size: 0.9rem;
@@ -192,6 +197,14 @@ nav {
     width: 100%;
     height: 1px;
     background-color: currentColor;
+}
+
+.page-updated {
+    margin-top: var(--space-8);
+    margin-bottom: 0;
+    font-family: var(--font-mono);
+    font-size: 0.82rem;
+    color: var(--text-secondary);
 }
 
 #theme-toggle {

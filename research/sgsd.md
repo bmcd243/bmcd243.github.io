@@ -237,13 +237,6 @@ wip: true
     line-height: 1.7;
   }
 
-  .last-updated {
-    color: var(--text-secondary);
-    font-size: 0.9rem;
-    margin-top: var(--space-8);
-    font-family: var(--font-mono);
-  }
-
   @media (max-width: 640px) {
     .comparison-row { grid-template-columns: 1fr; }
     .video-grid { grid-template-columns: 1fr; }
@@ -258,9 +251,8 @@ wip: true
     <h1 class="project-title">Semantically Grounded Skill Discovery via Vision-Language Models</h1>
     <p class="project-meta"><strong>Bachelor's Dissertation</strong> · University of Bath · 2026</p>
     <div class="project-links">
-      <a href="#">PDF (coming soon)</a>
+      <a href="https://github.com/bmcd243/url_benchmark_clip/">PDF</a>
       <a href="https://github.com/bmcd243/url_benchmark_clip/">Code</a>
-      <a href="#">Thesis (coming soon)</a>
     </div>
   </section>
 
@@ -644,8 +636,6 @@ wip: true
   school    = {University of Bath},
   type      = {Bachelor's Dissertation}
 }</pre>
-
-  <p class="last-updated">Last updated: {{ "now" | date: "%-d %B %Y" }}</p>
 
 </main>
 

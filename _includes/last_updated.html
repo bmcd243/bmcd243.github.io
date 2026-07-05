@@ -1,0 +1,9 @@
+{% assign updated = page.last_updated %}
+{% if updated == nil and site.data.page_updates %}
+  {% assign updated = site.data.page_updates[page.path] %}
+{% endif %}
+{% if updated %}
+<div class="container">
+  <p class="page-updated">Last updated: {{ updated | date: "%B %-d, %Y" }}</p>
+</div>
+{% endif %}
