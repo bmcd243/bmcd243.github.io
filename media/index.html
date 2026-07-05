@@ -18,57 +18,22 @@ permalink: /media/
             </div>
 
             <div class="media-grid">
-                <section class="media-card">
-                    <h2>Videos</h2>
-                    <ul class="media-list media-link-list">
-                        <li><a href="https://www.youtube.com/watch?v=KEbE33iGaIk" target="_blank" rel="noopener noreferrer">Sergey Levine (UC Berkeley): Robot Foundation Models</a></li>
-                        <li><a href="https://www.youtube.com/watch?v=HvDU7Vk4pbc" target="_blank" rel="noopener noreferrer">Jitendra Malik: Vision and Robotics for Embodied AI</a></li>
-                        <li><a href="https://www.youtube.com/watch?v=jZwuCtc2SoU" target="_blank" rel="noopener noreferrer">Robotics Professor Answers Robot Questions | Tech Support | WIRED</a></li>
-                        <li><a href="https://www.youtube.com/watch?v=3Y8aq_ofEVs" target="_blank" rel="noopener noreferrer">Robotics' End Game: Nvidia's Jim Fan</a></li>
+                {% for section in site.data.media_shelf.sections %}
+                <section class="media-card{% if section.wide %} media-card-wide{% endif %}">
+                    <h2>{{ section.title }}</h2>
+                    <ul class="media-list{% if section.link_list %} media-link-list{% endif %}">
+                        {% for item in section.items %}
+                        <li>
+                            {% if item.url %}
+                            <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.title }}</a>
+                            {% else %}
+                            {{ item.title }}
+                            {% endif %}
+                        </li>
+                        {% endfor %}
                     </ul>
                 </section>
-
-                <section class="media-card">
-                    <h2>Podcasts</h2>
-                    <ul class="media-list">
-                        <li>Machine Learning Street Talk</li>
-                    </ul>
-                </section>
-
-                <section class="media-card">
-                    <h2>Newsletters</h2>
-                    <ul class="media-list">
-                        <li>Sifted Daily</li>
-                        <li>TLDR AI</li>
-                    </ul>
-                </section>
-
-                <section class="media-card media-card-wide">
-                    <h2>Articles</h2>
-                    <ul class="media-list media-link-list">
-                        <li><a href="https://mitosrobotics.com/post.html?src=blog/scaling-alone-not-enough.md" target="_blank" rel="noopener noreferrer">Scaling Alone Is Not Enough</a></li>
-                        <li><a href="https://www.seangoedecke.com/how-i-use-llms-in-2026/" target="_blank" rel="noopener noreferrer">How I Use LLMs in 2026</a></li>
-                        <li><a href="https://jeffclune.com/why-work-on-self-improving-ai-given-the-risks.html" target="_blank" rel="noopener noreferrer">Why Work on Self-Improving AI Given the Risks?</a></li>
-                        <li><a href="https://medium.com/@aruna.kolluru/beyond-chatbots-a-guide-to-world-models-vlas-action-models-and-lbms-for-physical-ai-0deffc4807ed" target="_blank" rel="noopener noreferrer">Beyond Chatbots: A Guide to World Models, VLA Models, and LBMs for Physical AI</a></li>
-                        <li><a href="https://developer.nvidia.com/blog/pretrained-to-imagine-fine-tuned-to-act-the-rise-of-world-action-models/" target="_blank" rel="noopener noreferrer">Pretrained to Imagine, Fine-Tuned to Act</a></li>
-                    </ul>
-                </section>
-
-                <section class="media-card">
-                    <h2>Lecture Series</h2>
-                    <ul class="media-list media-link-list">
-                        <li><a href="https://www.youtube.com/watch?v=X0k14u6pSxw&list=PLPU18BnWYUZJx3_d901-GD6BGpeWwE2vx" target="_blank" rel="noopener noreferrer">ETHZ Robot Learning Course 2026</a></li>
-                        <li><a href="https://www.cs.cornell.edu/courses/cs4756/2026sp/" target="_blank" rel="noopener noreferrer">Robot Learning, Cornell CS 4756/5756, Spring 2026</a></li>
-                    </ul>
-                </section>
-
-                <section class="media-card">
-                    <h2>Papers</h2>
-                    <ul class="media-list media-link-list">
-                        <li><a href="https://arxiv.org/abs/2605.00080v1" target="_blank" rel="noopener noreferrer">World Model for Robot Learning: A Comprehensive Survey</a></li>
-                        <li><a href="https://arxiv.org/abs/2606.06556" target="_blank" rel="noopener noreferrer">Robots Need More than VLA and World Models</a></li>
-                    </ul>
-                </section>
+                {% endfor %}
             </div>
         </div>
     </section>
