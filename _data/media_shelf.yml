@@ -22,8 +22,8 @@ sections:
     wide: false
     items:
       - title: Machine Learning Street Talk
-    - title: "002. Interview with Stefano Albrecht of Nanyang Technological University: The more powerful AI becomes, the less humans should outsource their thinking."
-    url: https://www.xiaoyuzhoufm.com/episode/6a57215aca0de6c44ae76031?s=eyJ1IjogIjY4ODIwNmYxZDFkMzUwNzI2OTYyZjc0OSJ9&utm_source=substack&utm_medium=email
+      - title: "002. Interview with Stefano Albrecht of Nanyang Technological University: The more powerful AI becomes, the less humans should outsource their thinking."
+        url: https://www.xiaoyuzhoufm.com/episode/6a57215aca0de6c44ae76031?s=eyJ1IjogIjY4ODIwNmYxZDFkMzUwNzI2OTYyZjc0OSJ9&utm_source=substack&utm_medium=email
 
   - id: newsletters
     title: Newsletters
