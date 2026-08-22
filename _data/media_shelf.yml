@@ -16,6 +16,8 @@ sections:
         url: https://www.youtube.com/watch?v=c8mQKkuEmiI
       - title: "World Models, JEPA And The Path To Sample-Efficient RL"
         url: https://www.youtube.com/watch?v=qz4GQ0zUFRw
+      - title: "Chelsea Finn: This is the State of the Art in Robotics"
+        url: https://www.youtube.com/watch?v=cRZNwgvcWUg
 
 
   - id: podcasts
@@ -24,8 +26,11 @@ sections:
     wide: false
     items:
       - title: Machine Learning Street Talk
+        url: "https://www.youtube.com/c/machinelearningstreettalk"
       - title: "002. Interview with Stefano Albrecht of Nanyang Technological University: The more powerful AI becomes, the less humans should outsource their thinking."
         url: https://www.xiaoyuzhoufm.com/episode/6a57215aca0de6c44ae76031?s=eyJ1IjogIjY4ODIwNmYxZDFkMzUwNzI2OTYyZjc0OSJ9&utm_source=substack&utm_medium=email
+      - title: "Boris Sofman: Waymo, Cozmo, Self-Driving Cars, and the Future of Robotics | Lex Fridman Podcast #241"
+        url: https://www.youtube.com/watch?v=U_AREIyd0Fc
 
   - id: newsletters
     title: Newsletters
